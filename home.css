@@ -143,12 +143,10 @@ body { margin: 0; padding: 0; }
   .colabout {
     display: grid;
     gap: 10px;
-    background-color: darkred;
     padding: 10px;
   }
   
   .colabout {
-    background-color: darkred;
     text-align: center;
     padding: 20px;
     font-size: 30px;
