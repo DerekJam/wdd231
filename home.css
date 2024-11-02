@@ -144,14 +144,12 @@ body { margin: 0; padding: 0; }
     display: grid;
     gap: 10px;
     padding: 10px;
-    font: white;
   }
   
   .colabout {
     text-align: center;
     padding: 20px;
     font-size: 30px;
-    font: white;
   }
   
   .leftc {
@@ -170,3 +168,10 @@ body { margin: 0; padding: 0; }
   }
   
 
+  .h3 {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 18px;
+  }
