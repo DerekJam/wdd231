@@ -169,3 +169,26 @@ body { margin: 0; padding: 0; }
     grid-row-end: 15;
     text-color: white;
   }
+
+
+
+
+  .colwide {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .colwide > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .colcenter {
+    grid-row-start: 1;
+    grid-row-end: 15;
+    text-color: white;
+  }
+  
