@@ -139,7 +139,31 @@ body { margin: 0; padding: 0; }
 
 
 
-  .grid-container {
+
+
+
+
+
+
+  .colabout {
     display: grid;
-    gap: 50px 100px;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .colabout > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .leftc {
+    grid-row-start: 1;
+    grid-row-end: 15;
+  }
+  
+  .irightc {
+    grid-row-start: 1;
+    grid-row-end: 15;
   }
