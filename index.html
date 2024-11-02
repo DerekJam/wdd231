@@ -1,1 +1,266 @@
+<!DOCTYPE html>
+<html><html lang="en">
+ <head>
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="join.css">
+
+  <title>Chamber of Commerce for Tempe, Arizona</title>
+  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/favicon.ico">
+
+  <!--below is code for background image on entire webpage-->
+<style>
+     body {
+  background-color: darkred;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} 
+</style>
+<!--above ends the code for background image on entire webpage-->
+
+  <style>
+          div a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            display:inline-block;
+          }
+          ul {
+            display: inline;
+            margin: 0;
+            padding: 0;
+          }
+          ul li {display: inline-block;}
+          ul li:hover {background: lightskyblue;}
+          ul li:hover ul {display: block;}
+          ul li ul {
+            position: absolute;
+            width: 200px;
+            display: none;
+          }
+
+                    @media screen and (max-width: 500px) {
+            .navbar a {
+              float: none;
+              display: block;
+              width: 100%;
+              text-align: left;
+            }
+          }
+
+
+       
+            
+        .headerdiv2 {
+             padding-top: 5px;
+             padding-right: 15px;
+             padding-bottom: 5px;
+             padding-left: 15px;
+             text-align: center;
+             background: transparent;
+             color: white;
+             font-size: 14px;
+        }
+
+
+
+
+            .col-container2 {
+              display: table;
+              width: 100%;
+            }
+
+            .col2 {
+              display: table-cell;
+              padding: 16px;
+            }
+
+
+
+
+  </style>
+
+  <!--Below is for grid layout-->
+  <style>
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 450px auto;
+      grid-gap: 10px;
+      background-color: darkred;
+      padding: 10px;
+    }
+    
+    .grid-container > div {
+      background-color: darkred(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+        .item1 {
+      grid-row-start: 1;
+      grid-row-end: 6;
+    }
+
+    .blur {filter: blur(4px);}
+
+    .blur:hover {filter: none;}
+
+    
+    </style>
+<!--above is for grid layout-->
+
+<style>
+  h1 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
+</style>
+
+</head>
+<body>
+<div id="header">
+  <ul>
+    <li>
+    <a href="https://derekjam.github.io/wdd231/chamber">Home</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/wdd231/chamberd/directory.html">Directory</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/wdd231/chamber/join.html">Join</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/wdd231/chamber/discover.html">Discover</a>
+      </li>
+    </ul>
+</div>
+
+<div id="content">
+    
+<br>
+  <p style='font-size:46px; color:white' >Discover Tempe!</p>
+
+  <!--Try HTML and JS for Greetings time stamped below-->
+  <div>
+    <script type = "text/javascript">
+      var days = 730; // the cookie will expire = 2 years
+      var lastvisit=new Object();
+      var firstvisitmsg="<p style='font-size:18px; color:white; align:center'>Welcome to our page for the first time!</p> <p>Enjoy!</p>"; 
+      lastvisit.subsequentvisitmsg="<p style='font-size:18px; color:white'>Welcome back friend!</p> <p style='font-size:18px; color:white'>You last visited the <em>Discover Tempe Arizona page</em> on</p> <p style='font-size:18px; color:white;'>[date_displayed]</p>";
+       
+      lastvisit.getCookie=function(Name){ 
+      var re=new RegExp(Name+"=[^;]+", "i"); 
+      if (document.cookie.match(re)) 
+      return document.cookie.match(re)[0].split("=")[1];
+      return''; 
+      }
+       
+      lastvisit.setCookie=function(name, value, days){ 
+      var expireDate = new Date();
+       
+      var expstring=expireDate.setDate(expireDate.getDate()+parseInt(days));
+      document.cookie = name+"="+value+"; expires="+expireDate.toGMTString()+"; path=/";
+      }
+       
+      lastvisit.showmessage = function() {
+      var wh = new Date();
+      if (lastvisit.getCookie("visit_record") == "") { 
+      lastvisit.setCookie("visit_record", wh, days); 
+      document.write(firstvisitmsg);
+      }
+       
+      else {
+      var lv = lastvisit.getCookie("visit_record");
+      var lvp = Date.parse(lv);
+      var now = new Date();
+      now.setTime(lvp);
+      var day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+      var month = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+      var dd = now.getDate();
+      var dy = now.getDay();
+      dy = day[dy];
+      var mn = now.getMonth();
+      mn = month[mn];
+      yy = now.getFullYear();
+      var hh = now.getHours();
+      var ampm = "AM";
+      if (hh >= 12) {ampm = "PM"}
+      if (hh >12){hh = hh - 12};
+      if (hh == 0) {hh = 12}
+      if (hh < 10) {hh = "0" + hh};
+      var mins = now.getMinutes();
+      if (mins < 10) {mins = "0"+ mins}
+      var secs = now.getSeconds();
+      if (secs < 10) {secs = "0" + secs}
+      var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
+      document.write(lastvisit.subsequentvisitmsg.replace("\[date_displayed\]", dispDate))
+      }
+       
+      lastvisit.setCookie("visit_record", wh, days);
+       
+      }
+       
+      lastvisit.showmessage();
+      </script>
+      
+  </div>
+<!--END HTML and JS for Greetings time stamped above-->
+
+  <div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item2"><figure><img class="blur" src="IMAGE" alt="Phoenix1" style="width:100%; height:100%">
+			<br><p style="color:white" font-size:14px;>Phoenix at night</p></div>
+    <div class="item3">Image here with normal loading</div>  
+    <div class="item4"><img src="IMAGE" alt="Phoenix2" style="width:100%">
+      <br><p style="color:white">Tempe</p></div>
+    <div class="item5">Place another image here</div>
+    <div class="item6"><img src="IMAGE" alt="Phoenix3" style="width:100%" loading="lazy"></div>
+    <div class="item7">7</div>
+    <div class="item8"><img src="IMAGE" alt="Phoenix4" style="width:100%" loading="lazy"></div>
+    <div class="item7">9</div>
+    <div class="item8"><img src="IMAGE" alt="Phoenix5" style="width:100%" loading="lazy"></div>
+    <div class="item7">11</div>
+    <div class="item8"><img src="IMAGE" alt="Phoenix6" style="width:100%" loading="lazy"></div>
+
+
+
+  </div>
+
+
+
+
+</div>   
+
+
+
+
+
+<div id="footer">
+
+    <p id="demo">
+        <script>
+        const date = new Date(document.lastModified);
+        document.getElementById("demo").innerHTML = date;
+        </script> 
+        <a href="https://www.X.com"><img src="IMAGE URL" alt="twitterx" style="width:14px;height:14px;"></a>
+        | 
+        <a href="https://www.Facebook.com"><img src="IMAGE URL" alt="facebook" style="width:16px;height:16px;"></a>
+        | 
+        <a href="https://www.LinkedIn.com"><img src="IMAGE URL" alt="linkedin" style="width:16px;height:16px;"></a>  
+        | Derek J. Steele  | WDD231 Class Project | ©2024 Tempe, AZ Chamber of Commerce 
+      </p>
+      
+</div>
+
+</body>
+
+</html>
