@@ -143,7 +143,7 @@ body { margin: 0; padding: 0; }
   .colabout {
     display: grid;
     gap: 10px;
-    background-color: #000000;
+    background-color: darkred;
     padding: 10px;
   }
   
