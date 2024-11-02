@@ -140,49 +140,34 @@ body { margin: 0; padding: 0; }
 
 
 
-
-
-
-
-
   .colabout {
     display: grid;
-    grid-template-columns: auto auto;
     gap: 10px;
+    background-color: #000000;
     padding: 10px;
   }
   
-  .colabout > div {
+  .colabout {
+    background-color: #D3D3D3;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     font-size: 30px;
   }
   
   .leftc {
-    grid-row-start: 1;
-    grid-row-end: 15;
-    text-color: white;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
   }
   
   .rightc {
-    grid-row-start: 1;
-    grid-row-end: 15;
-    text-color: white;
-  }
-
-
-
-
-  .colwide {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    padding: 10px;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
   }
   
-  .colcenter {
-    grid-row-start: 1;
-    grid-row-end: 15;
-    text-color: white;
+  .centerc {
+    grid-column: 1 / span 4;
+    grid-row: 3 ;
   }
   
+
+
