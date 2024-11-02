@@ -161,9 +161,11 @@ body { margin: 0; padding: 0; }
   .leftc {
     grid-row-start: 1;
     grid-row-end: 15;
+    text-color: white;
   }
   
-  .irightc {
+  .rightc {
     grid-row-start: 1;
     grid-row-end: 15;
+    text-color: white;
   }
