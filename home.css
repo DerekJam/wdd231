@@ -114,7 +114,7 @@ nav {
 
 
 
-/* begin boxes in grid/
+<!--begin boxes in grid-->
 
 .grid-container-element { 
     display: grid; 
@@ -128,7 +128,7 @@ nav {
     border: 1px solid red; 
 }
 
-/* end boxes in grid/
+<!--end boxes in grid-->
 
 
 
