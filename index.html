@@ -1,28 +1,33 @@
+
 <!DOCTYPE html>
-<html><html lang="en">
- <head>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
 
 
-  <title>Derek J. Steele</title>
-  <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="home.css">
+
+  
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
 
 
-  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/images/favicon.ico">
+  <title>🔒Responsive Menu using &#39;Hamburger&#39; - sol</title>
 
-  <!--below is code for background on entire webpage-->
-<style>
-     body {
-  background-color: darkred;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-} 
-</style>
-<!--above ends the code for background on entire webpage-->
+    <link rel="canonical" href="https://codepen.io/blazzard-jason/pen/RwYLvJY">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-
-<!-- below is from bro blazzard -->
+  
+  
 <style>
 * {
 	margin: 0;
@@ -43,7 +48,7 @@ h2 {
 	text-align: left;
 	margin: 1rem;
 }
-          
+
 nav {
 	max-width: 700px;
 	margin: 1rem auto;
@@ -62,10 +67,10 @@ nav {
 
 #menu::before {
 	content: "☰";
-;
+}
 
 #menu.open::before {
-	content: "X";
+	content: "❎";
 }
 
 .navigation {
@@ -73,6 +78,14 @@ nav {
 	flex-direction: column;
 	list-style: none;
 	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
 	color: #fff;
 }
 .navigation a:hover {
@@ -165,235 +178,6 @@ hamButton.addEventListener('click', () => {
     </script>
 
   
-</body>
-<!-- above is from bro blazzard -->
-
-
-
-
-
-                    @media screen and (max-width: 500px) {
-            .navbar a {
-              float: none;
-              display: block;
-              width: 100%;
-              text-align: left;
-            }
-          }
-
-
-       
-            
-        .headerdiv2 {
-             padding-top: 5px;
-             padding-right: 15px;
-             padding-bottom: 5px;
-             padding-left: 15px;
-             text-align: center;
-             background: transparent;
-             color: white;
-             font-size: 14px;
-        }
-
-
-
-
-            .col-container2 {
-              display: table;
-              width: 100%;
-            }
-
-            .col2 {
-              display: table-cell;
-              padding: 16px;
-            }
-
-
-
-
-  </style>
-
-  <!--Below is for grid layout-->
-  <style>
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: 450px auto;
-      grid-gap: 10px;
-      background-color: darkred;
-      padding: 10px;
-    }
-    
-    .grid-container > div {
-      background-color: darkred(255, 255, 255, 0.8);
-      text-align: center;
-      padding: 20px 0;
-      font-size: 30px;
-    }
-
-        .item1 {
-      grid-row-start: 1;
-      grid-row-end: 6;
-    }
-
-    .blur {filter: blur(4px);}
-
-    .blur:hover {filter: none;}
-
-    
-    </style>
-<!--above is for grid layout-->
-
-<style>
-  h1 {text-align: center;}
-  p {text-align: center;}
-  div {text-align: center;}
-</style>
-
-
-</head>
-<body>
-<div id="header">
-
-  
-  <p style='font-size:18px; color:white'><img src="images/header.jpg" alt="me" style="width:5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Derek J. Steele</p>
-  
-  <ul>
-    <li>
-    <a href="https://derekjam.github.io/wdd231/">Home</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="https://derekjam.github.io/wdd231/chamber.html">Chamber</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="https://derekjam.github.io/wdd231/github.html">GitHub Profile</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com">LinkedIn</a>
-      </li>
-    </ul>
-</div>
-
-<div id="content">
-    <div class="content">
-  
-<br>
-<br>
-<br>
-<br> 
-<br>
-<br>
-
-<div class="colabout">
-  <div class="leftc"><h3>Course Work</h3>Courses Worked</div>
-  <div class="rightc"><h3>City</h3>Tempe, AZ</div>
-  <div class="centerc"><h3>WDD</h3>Web Design and Development</div>
-</div>
-
-<br>
-  <p style='font-size:46px; color:white' >TEXT</p>
-
-  <!--Try HTML and JS for Greetings time stamped below-->
-  <div>
-    <script type = "text/javascript">
-      var days = 730; // the cookie will expire = 2 years
-      var lastvisit=new Object();
-      var firstvisitmsg="<p style='font-size:18px; color:white; align:center'>Welcome to our page for the first time!</p> <p>Enjoy!</p>"; 
-      lastvisit.subsequentvisitmsg="<p style='font-size:18px; color:white'>Welcome back!</p> <p style='font-size:18px; color:white'>You last visited <em> my </em> page on</p> <p style='font-size:18px; color:white;'>[date_displayed]</p>";
-       
-      lastvisit.getCookie=function(Name){ 
-      var re=new RegExp(Name+"=[^;]+", "i"); 
-      if (document.cookie.match(re)) 
-      return document.cookie.match(re)[0].split("=")[1];
-      return''; 
-      }
-       
-      lastvisit.setCookie=function(name, value, days){ 
-      var expireDate = new Date();
-       
-      var expstring=expireDate.setDate(expireDate.getDate()+parseInt(days));
-      document.cookie = name+"="+value+"; expires="+expireDate.toGMTString()+"; path=/";
-      }
-       
-      lastvisit.showmessage = function() {
-      var wh = new Date();
-      if (lastvisit.getCookie("visit_record") == "") { 
-      lastvisit.setCookie("visit_record", wh, days); 
-      document.write(firstvisitmsg);
-      }
-       
-      else {
-      var lv = lastvisit.getCookie("visit_record");
-      var lvp = Date.parse(lv);
-      var now = new Date();
-      now.setTime(lvp);
-      var day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
-      var month = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-      var dd = now.getDate();
-      var dy = now.getDay();
-      dy = day[dy];
-      var mn = now.getMonth();
-      mn = month[mn];
-      yy = now.getFullYear();
-      var hh = now.getHours();
-      var ampm = "AM";
-      if (hh >= 12) {ampm = "PM"}
-      if (hh >12){hh = hh - 12};
-      if (hh == 0) {hh = 12}
-      if (hh < 10) {hh = "0" + hh};
-      var mins = now.getMinutes();
-      if (mins < 10) {mins = "0"+ mins}
-      var secs = now.getSeconds();
-      if (secs < 10) {secs = "0" + secs}
-      var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
-      document.write(lastvisit.subsequentvisitmsg.replace("\[date_displayed\]", dispDate))
-      }
-       
-      lastvisit.setCookie("visit_record", wh, days);
-       
-      }
-       
-      lastvisit.showmessage();
-      </script>
-      
-  </div>
-<!--END HTML and JS for Greetings time stamped above-->
-    </div>
-</div>   
-
-<br>
-<br>
-<br>
-<br> 
-<br>
-<br>
-
-
-
-
-<div id="footer">
-
-    <p id="demo">
-        <script>
-        const date = new Date(document.lastModified);
-        document.getElementById("demo").innerHTML = date;
-        </script> 
-        <a href="https://www.X.com"><img src="images/xwhite.png" alt="twitterx" style="width:14px;height:14px;"></a>
-        | 
-        <a href="https://www.Facebook.com"><img src="images/FacebookLogo.png" alt="facebook" style="width:16px;height:16px;"></a>
-        | 
-        <a href="https://www.LinkedIn.com"><img src="images/LinkedIn.png" alt="linkedin" style="width:16px;height:16px;"></a>  
-        | Derek J. Steele  | WDD231 Class Project | ©2024  
-      </p>
-      
-</div>
-
 </body>
 
 </html>
