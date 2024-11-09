@@ -68,9 +68,7 @@ nav {
 	display: block;
 }
 
-.active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
-}
+
 
 .mainbox {
 	margin: 0.5m;
