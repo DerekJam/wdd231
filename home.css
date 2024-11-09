@@ -39,7 +39,7 @@ nav {
 }
 
 #menu.open::before {
-	content: "❎";
+	content: "X";
 }
 
 .navigation {
