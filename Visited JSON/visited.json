@@ -1,0 +1,30 @@
+[
+    {
+        "family_name": "Smith",
+        "move_in_date": "2024-06-24",
+        "number_of_people": "Mary",
+        "visited": true,
+        "members_of_family": [
+          {
+            "name": "John",
+            "gender": "Male",
+            "birthdate": "1970-05-15"
+          },
+          {
+            "name": "Susan",
+            "gender": "Female",
+            "birthdate": "1971-02-19"
+          },
+          {
+            "name": "Jim",
+            "gender": "Male",
+            "birthdate": "1990-10-05"
+          },
+          {
+            "name": "Jane",
+            "gender": "Female",
+            "birthdate": "1995-04-02"
+          },
+        ]
+    },
+]
