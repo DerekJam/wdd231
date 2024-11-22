@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <title>DOCUMENT</title>
+    <title>Weather API</title>
     <script src="styles/weather.js"></script>
   </head>
   <body>
@@ -18,74 +18,6 @@
 </main>
 <footer>
   Derek J. Steele | OpenWeatherMap.org | CC BY-SA 4.0
-  <!--Try HTML and JS for Greetings time stamped below-->
-  <div>
-    <script type = "text/javascript">
-      var days = 730; // the cookie will expire = 2 years
-      var lastvisit=new Object();
-      var firstvisitmsg="<p style='font-size:18px; color:white; align:center'>Welcome to our page for the first time!</p> <p>Enjoy!</p>"; 
-      lastvisit.subsequentvisitmsg="<p style='font-size:18px; color:white'>Welcome back!</p> <p style='font-size:18px; color:white'>You last visited <em> my </em> page on</p> <p style='font-size:18px; color:white;'>[date_displayed]</p>";
-       
-      lastvisit.getCookie=function(Name){ 
-      var re=new RegExp(Name+"=[^;]+", "i"); 
-      if (document.cookie.match(re)) 
-      return document.cookie.match(re)[0].split("=")[1];
-      return''; 
-      }
-       
-      lastvisit.setCookie=function(name, value, days){ 
-      var expireDate = new Date();
-       
-      var expstring=expireDate.setDate(expireDate.getDate()+parseInt(days));
-      document.cookie = name+"="+value+"; expires="+expireDate.toGMTString()+"; path=/";
-      }
-       
-      lastvisit.showmessage = function() {
-      var wh = new Date();
-      if (lastvisit.getCookie("visit_record") == "") { 
-      lastvisit.setCookie("visit_record", wh, days); 
-      document.write(firstvisitmsg);
-      }
-       
-      else {
-      var lv = lastvisit.getCookie("visit_record");
-      var lvp = Date.parse(lv);
-      var now = new Date();
-      now.setTime(lvp);
-      var day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
-      var month = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-      var dd = now.getDate();
-      var dy = now.getDay();
-      dy = day[dy];
-      var mn = now.getMonth();
-      mn = month[mn];
-      yy = now.getFullYear();
-      var hh = now.getHours();
-      var ampm = "AM";
-      if (hh >= 12) {ampm = "PM"}
-      if (hh >12){hh = hh - 12};
-      if (hh == 0) {hh = 12}
-      if (hh < 10) {hh = "0" + hh};
-      var mins = now.getMinutes();
-      if (mins < 10) {mins = "0"+ mins}
-      var secs = now.getSeconds();
-      if (secs < 10) {secs = "0" + secs}
-      var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
-      document.write(lastvisit.subsequentvisitmsg.replace("\[date_displayed\]", dispDate))
-      }
-       
-      lastvisit.setCookie("visit_record", wh, days);
-       
-      }
-       
-      lastvisit.showmessage();
-      </script>
-      
-  </div>
-<!--END HTML and JS for Greetings time stamped above-->
-
-
-
-</footer>
+  </footer>
 </body>
 </html>
