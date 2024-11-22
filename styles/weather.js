@@ -21,7 +21,7 @@ function displayData(data)
 	document.querySelector('#current-temp').textContent = `<strong>${data.main.temp.toFixed(1)}</strong>°F`;
 
 
-	const iconsrc=`https://openweathermap.org/img/w/${data.weather[0].icon}png`;
+	const iconsrc='https://openweathermap.org/img/w/${data.weather[0].icon}png';
 	let description = data.weather[0].description;
 
 	weatherIcon.setAttribute('src', iconsrc);
