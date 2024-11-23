@@ -143,3 +143,19 @@ body { margin: 0; padding: 0; }
     padding: 1rem 1rem;
     vertical-align: middle;
   }
+
+
+  section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .most {
+    background-color: #bed;
+  }
+
