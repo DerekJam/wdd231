@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="stylesheet" href="index.css">
   <meta property="og:site_name" content="Tempe Chamber of Commerce Directory">
@@ -11,232 +11,303 @@
   <meta property="og:url" content="https://derekjam.github.io/WDD231/chamber/index.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:description" content="Tempe Chamber of Commerce Directory for WDD231">
-  <meta property="og:site_name" content="Tempe Chamber of Commerce Directory">
   <meta name="twitter:image:alt" content="Alt text for image">
-
   <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/data/favcham.ico">
-
-
-
+  
   <style>
-          div a {
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            padding: 15px;
-            display:inline-block;
-          }
-          ul {
-            display: inline;
-            margin: 0;
-            padding: 0;
-          }
-          ul li {display: inline-block;}
-          ul li:hover {background: lightskyblue;}
-          ul li:hover ul {display: block;}
-          ul li ul {
-            position: absolute;
-            width: 200px;
-            display: none;
-          }
-
-                    @media screen and (max-width: 500px) {
-            .navbar a {
-              float: none;
-              display: block;
-              width: 100%;
-              text-align: left;
-            }
-          }
-
-
-          .headerdiv {
-             padding-top: 5px;
-             padding-right: 15px;
-             padding-bottom: 5px;
-             padding-left: 15px;
-             text-align: center;
-             background: transparent;
-             color: white;
-             font-size: 14px;
-        }
-       
-            
-        .headerdiv2 {
-             padding-top: 5px;
-             padding-right: 15px;
-             padding-bottom: 5px;
-             padding-left: 15px;
-             text-align: center;
-             background: transparent;
-             color: white;
-             font-size: 14px;
-        }
-
-
-
-            .col-container {
-              display: table;
-              width: 100%;
-            }
-
-            .col {
-              display: table-cell;
-              padding: 16px;
-            }
-
-
-            .col-container2 {
-              display: table;
-              width: 100%;
-            }
-
-            .col2 {
-              display: table-cell;
-              padding: 16px;
-            }
-
-
-
-
+    div a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display:inline-block;
+    }
+    ul {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      display: inline-block;
+    }
+    ul li:hover {
+      background: lightskyblue;
+    }
+    ul li:hover ul {
+      display: block;
+    }
+    ul li ul {
+      position: absolute;
+      width: 200px;
+      display: none;
+    }
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    .headerdiv {
+      padding-top: 5px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      text-align: center;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+    }
+    .col-container {
+      display: table;
+      width: 100%;
+    }
+    .col {
+      display: table-cell;
+      padding: 16px;
+    }
+    .col-container2 {
+      display: table;
+      width: 100%;
+    }
+    .col2 {
+      display: table-cell;
+      padding: 16px;
+    }
+    body {
+      background-color: #006ff7;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: left;
+      font-family: times, serif;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: navy;
+      text-align: left;
+      margin: 1rem;
+    }
+    nav {
+      max-width: 100%;
+      margin: 1rem auto;
+    }
+    #menu {
+      font-size: 1.5rem;
+      border: 0;
+      background: none;
+      color: #000;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    #menu::before {
+      content: "☰";
+    }
+    #menu.open::before {
+      content: "❎";
+    }
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background-color: #333;
+      color: #fff;
+    }
+    .navigation a {
+      display: none;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    .navigation a:hover {
+      background-color: #00fffb;
+      color: #333;
+      font-weight: 700;
+    }
+    .open a {
+      display: block;
+    }
+    .mainbox {
+      margin: 0m;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: #006ff7;
+      max-width: 100%;
+      height: 100vh;
+    }
+    @media (min-width: 37.5em) {
+      h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      #menu {
+        display: none;
+      }
+      .navigation {
+        flex-direction: row;
+      }
+      .navigation a {
+        display: block;
+        flex: 1 1 100%;
+      }
+      .mainbox {
+        margin: 1rem auto;
+      }
+    }
   </style>
 </head>
-<body>
-<div id="header">
-  <ul>
-    <li>
-    <a href="https://derekjam.github.io/WDD231/chamber/index.html">Home</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="https://derekjam.github.io/WDD231/chamber/directory.html">Directory</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="https://derekjam.github.io/WDD231/">Join</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="https://derekjam.github.io/WDD231/">Discover</a>
-      </li>
-    </ul>
-</div>
 
-<div id="content">
-    
-    <div class='outer1'>
-      <div class='innerright1'><h1>Tempe, Arizona Chamber of Commerce</h1></div>
-    </div>
+<body translate="no">
+  <br>
+    <h1>
+      <img src="https://github.com/DerekJam/wdd231/blob/2eb117b51791c6b35702b7c47d92790f48c7bf0e/images/tcclogo2.png?raw=true" alt="TCC Logo" width="50" height="auto">
+      Tempe, Arizona Chamber of Commerce
+      <img src="https://github.com/DerekJam/wdd231/blob/2eb117b51791c6b35702b7c47d92790f48c7bf0e/images/tcclogo2.png?raw=true" alt="TCC Logo" width="50" height="auto">
+    </h1>
+
+  <button type="button" id="menu"></button>
+  <nav class="navigation">
+    <a href="#" title="Home">Home</a>
+    <a href="directory.html" title="Chamber Directory">Directory</a>
+    <a href="join.html" title="Join">Join</a>
+    <a href="discover.html" title="Discover">Discover</a>
+
+  </nav>
+
+  
 
     <div class='outer1a'>
-        <div class='innerright1a'>
-            <img src="https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Cities/znatwhav7pmbgfjfasfa_603abd2f6782d45765146edc48eb2baa.jpg" width="550" height="auto">
-        </div>
+      <div class='innerright1a'>
+        <img src="https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Cities/znatwhav7pmbgfjfasfa_603abd2f6782d45765146edc48eb2baa.jpg" alt="Tempe Town Lake" width="550" height="auto">
+      </div>
 
-
-    <div class='outer2'>
-
-    <div class="headerdiv">
-        <div class="col-container">
-            <div class="col" style="background:orange">
-                <div class="headerdiv">
-                    <h1>Events</h1>
-                </div>
-                <p>Check here for upcoming events</p>
+      <div class='outer2'>
+        <div class="headerdiv">
+          <div class="col-container">
+            <div class="col" style="background:darkmagenta">
+              <div class="headerdiv">
+                <h1>Events</h1>
+              </div>
+              <br><p>On January 1, 2025, Movie in the Park</p><br>
+              <p>On February 3, 2025, FREE popcorn</p><br>
+              <p>On March 4, 2025, Chalk Walk (more details to come)</p><br>
             </div>
-          
+
             <div class="col" style="background:green">
-                <div class="headerdiv">
-                    <h1>Weather</h1>
-                </div>
-                <p>
-                    <!--Below is code for weather-->
-                    <div id="ww_411345cb279f1" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl1430"],"font":"Arial","sl_ics":"one","sl_sot":"fahrenheit","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","el_whr":3}'>More forecasts: <a href="https://oneweather.org/new_york_city/30_days/" id="ww_411345cb279f1_u" target="_blank">New York weather 30 days</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_411345cb279f1"></script>
-                    <!--Above is code for weather-->
-                </p>
+              <div class="headerdiv">
+                <h1>Weather</h1>
+              </div>
+              <p>
+
+                <script src="scripts/weather.js"></script>
+                <main>
+                    <p>The current temperature in Tempe, Arizona is <span id="current-temp"></span></p>
+                    <figure>
+                      <img id="weather-icon" src="https://github.com/DerekJam/wdd231/blob/main/images/clouds.png?raw=true" alt="clouds" width="60" height="60">
+                      <figcaption></figcaption>
+                    </figure>
+                  </main>
+
+
+              </p>
             </div>
           </div>
-
-    </div>
-        
-    </div>
+        </div>
+      </div>
     </div>
 
     <div class='outer3'>
-      
-        <div class="headerdiv2">
-            <div class="col-container2">
-
-                <div class="col2" style="background:orange">
-                    <div class="headerdiv2">
-                        <h1>Business 1</h1>
-                    </div>
-                    <p>
-                      <script type="text/javascript">
-                        let companies =
-                        `[
-                          {
-                            "name": "Big Corporation",
-                            "numberOfEmployees": 10000,
-                            "ceo": "Mary",
-                            "rating": 3.6
-                          },
-                          {
-                            "name": "Small Startup",
-                            "numberOfEmployees": 3,
-                            "ceo": null,
-                            "rating": 4.3
-                          }
-                    
-                        ]`
-                    
-                        console.log(JSON.parse(companies)[1].name)
-                      </script>
-                    </p>
-                </div>
+      <div class="headerdiv">
+        <div class="col-container2">
+          <div class="col2" style="background:darkmagenta">
+            <div class="headerdiv2">
               
-                <div class="col2" style="background:lightseagreen">
-                    <div class="headerdiv2">
-                        <h1>Business 2</h1>
-                    </div>
-                    <p>2 info</p>
-                </div>
-
-                <div class="col2" style="background:green">
-                    <div class="headerdiv2">
-                        <h1>Business 3</h1>
-                    </div>
-                    <p>3 info</p>
-                </div>
-
-              </div>
-    
+            </div>
+            <p>
+              <script type="text/javascript">
+                let companies = [
+                  {
+                    "name": "Tempe Public Library",
+                    "numberOfEmployees": 10000,
+                    "ceo": "Mary",
+                    "rating": 3.6,
+                  },
+                  {
+                    "name": "Arizona Mills Mall",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  },
+                  {
+                    "name": "Tempe Town Lake",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  },
+                  {
+                    "name": "Arizona State University",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  },
+                  {
+                    "name": "Maui Hawaiian Grill",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  },
+                  {
+                    "name": "Kiwanis Park",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  }
+                ];
+                console.log(companies[1].name);  // Outputs: Company Name
+                document.write(companies[0].name);
+              </script>
+            </p>
+          </div>
+          <div class="col2" style="background:lightseagreen">
+            <div class="headerdiv">
+              
+            </div>
+            <p>2 info</p>
+          </div>
+          <div class="col2" style="background:green">
+            <div class="headerdiv">
+              
+            </div>
+            <p>3 info</p>
+          </div>
         </div>
-            
-        </div>
+      </div>
     </div>
+  </div>
 
-    <div class='outer4'>
-      <div class='innerleft5'></div>
-      <div class='innerright5'></div>
-    </div>
+  <br><br><br>
 
-
-</div>
-
-<div id="footer">
-  
-  <p id="demo">
-  <script>
-  const date = new Date(document.lastModified);
-  document.getElementById("demo").innerHTML = date;
-  </script> | ©2024 Tempe, AZ Chamber of Commerce | WDD231 Class Project | Derek J. Steele </p>
-</div>
+  <div id="footer">
+    <p id="demo">
+      <script>
+        const date = new Date(document.lastModified);
+        document.getElementById("demo").innerHTML = date;
+      </script> | ©2024 Tempe, AZ Chamber of Commerce | WDD231 Class Project | Derek J. Steele
+    </p>
+  </div>
 
 </body>
 </html>
-
-
