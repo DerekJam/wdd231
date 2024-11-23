@@ -1,331 +1,268 @@
 <!DOCTYPE html>
-<html lang='en'>
- 
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="directory.css">
-    <meta property="og:site_name" content="Tempe Chamber of Commerce Directory">
-    <meta property="og:title" content="Tempe Chamber of Commerce Directory">
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://derekjam.github.io/WDD231/chamber/directory.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:description" content="Tempe Chamber of Commerce Directory for WDD231">
-    <meta property="og:site_name" content="Tempe Chamber of Commerce Directory">
-    <meta name="twitter:image:alt" content="Alt text for image">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css">
+  <meta property="og:site_name" content="Tempe Chamber of Commerce Directory">
+  <meta property="og:title" content="Tempe Chamber of Commerce Directory">
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://derekjam.github.io/WDD231/chamber/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:description" content="Tempe Chamber of Commerce Directory for WDD231">
+  <meta name="twitter:image:alt" content="Alt text for image">
+  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/data/favcham.ico">
   
-    <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/data/favcham.ico">
-    <style>
-    @media only screen and (max-width: 620px) {
-    /* For mobile phones: */
-    body, #footer, .menu1, .menu2, .main, .container, .text body, .box-wrapper, #header, #box2, #box3a, .main, .text1, .middle-column, .middle-column div, .middle-column div+div, .middle-column1, #box13, #box14, #box3left, #footer {
-    width: 100%;
+  <style>
+    div a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display:inline-block;
     }
+    ul {
+      display: inline;
+      margin: 0;
+      padding: 0;
     }
-
-
-    
-body {
-  background-image: url('https://www.tempetourism.com/wp-content/uploads/Mill-Avenue-Bridge-Header-6.7.2023.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-
-    </style>
-
-    <title>
-       Tempe, AZ | Chamber of Commerce
-    </title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
- 
-        body {
-            margin: 2%;
-            justify-content: center;
-            overflow: auto
-        }
- 
-        .box-wrapper {
-            height: 95vh;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            text-align: center
-        }
- 
-        #header {
-            padding: 10px;
-            border: solid 0px green
-        }
- 
-        #box2 {
-            padding: 8px;
-            border: solid 0px blue
-        }
- 
-       
-        #box3a {
-            padding: 10px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            border: solid 0px green;
-            text-align: center;
-            margin: 2%;
-            justify-content: center
-        }
-
-        .main {
-             position: fixed;
-             background-color: transparent;
-             top: 0;
-             left: 0;
-             right: 0;
-        }
-
-        .text1 {
-             position: fixed;
-             background-color: transparent;
-             top: 30;
-             left: 0;
-             right: 0;
-        }
- 
-        .middle-column {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column
-        }
- 
-        .middle-column div {
-            flex-grow: 1;
-            margin: 0 8px;
-            border: solid 0px red
-        }
- 
-        .middle-column div+div {
-            margin-top: 8px
-        }
- 
-       
-
-        .middle-column1 {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column
-        }
-
-       
-
-        #box13 {
-            padding: 5px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            border: solid 0px pink;
-            text-align: center;
-            margin: 2%;
-            justify-content: center
-        }
-
-        #box14 {
-            padding: 10px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: row;
-            border: solid 0px green
-        }
-
-        #box3left {
-            flex-grow: 2;
-            border: solid 0px orange
-        }
-
-        #footer {
-            padding: 10px;
-            border: solid 0px 
-        }
-
-
- 
-
-
-
-<style>
-  div {background-color: blue;}
-  div a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 15px;
-    display:inline-block;
-  }
-  ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-  }
-  ul li {display: inline-block;}
-  ul li:hover {background: yellow;}
-  ul li:hover ul {display: block;}
+    ul li {
+      display: inline-block;
+    }
+    ul li:hover {
+      background: lightskyblue;
+    }
+    ul li:hover ul {
+      display: block;
+    }
+    ul li ul {
+      position: absolute;
+      width: 200px;
+      display: none;
+    }
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    .headerdiv {
+      padding-top: 5px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      text-align: center;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+    }
+    .col-container {
+      display: table;
+      width: 100%;
+    }
+    .col {
+      display: table-cell;
+      padding: 16px;
+    }
+    .col-container2 {
+      display: table;
+      width: 100%;
+    }
+    .col2 {
+      display: table-cell;
+      padding: 16px;
+    }
+    body {
+      background-color: #006ff7;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: left;
+      font-family: times, serif;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: navy;
+      text-align: left;
+      margin: 1rem;
+    }
+    nav {
+      max-width: 100%;
+      margin: 1rem auto;
+    }
+    #menu {
+      font-size: 1.5rem;
+      border: 0;
+      background: none;
+      color: #000;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    #menu::before {
+      content: "☰";
+    }
+    #menu.open::before {
+      content: "❎";
+    }
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background-color: #333;
+      color: #fff;
+    }
+    .navigation a {
+      display: none;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    .navigation a:hover {
+      background-color: #00fffb;
+      color: #333;
+      font-weight: 700;
+    }
+    .open a {
+      display: block;
+    }
+    .mainbox {
+      margin: 0m;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: #006ff7;
+      max-width: 100%;
+      height: 100vh;
+    }
+    @media (min-width: 37.5em) {
+      h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      #menu {
+        display: none;
+      }
+      .navigation {
+        flex-direction: row;
+      }
+      .navigation a {
+        display: block;
+        flex: 1 1 100%;
+      }
+      .mainbox {
+        margin: 1rem auto;
+      }
+    }
   </style>
-
-    </style>
 </head>
- 
 
+<body translate="no">
+  <br>
+    <h1><img src="" alt="TCC Logo" width="550" height="auto">
+        Tempe, Arizona Chamber of Commerce</h1>
+    <h2>Directory</h2>
 
-<body>
+  <button type="button" id="menu"></button>
+  <nav class="navigation">
+    <a href="#" title="Home">Home</a>
+    <a href="directory.html" title="Chamber Directory">Directory</a>
+    <a href="join.html" title="Join">Join</a>
+    <a href="discover.html" title="Discover">Discover</a>
 
-    <div class="box-wrapper">
+  </nav>
+
+  
+
+    <div class='outer1a'>
+      <div class='innerright1a'>
+        <img src="https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Cities/znatwhav7pmbgfjfasfa_603abd2f6782d45765146edc48eb2baa.jpg" alt="Tempe Town Lake" width="550" height="auto">
+      </div>
+
+      
+
+    <div class='outer3'>
+      <div class="headerdiv">
+        <div class="col-container2">
+          <div class="col2" style="background:green">
+            <div class="headerdiv2">
+              
+            </div>
+            <p>
+              <script type="text/javascript">
+                let companies = [
+                  {
+                    "name": "Tempe Public Library",
+                    "numberOfEmployees": 10000,
+                    "ceo": "Mary",
+                    "rating": 3.6,
+                  },
+                  {
+                    "name": "Arizona Mills Mall",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  },
+                  {
+                    "name": "Tempe Town Lake",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  },
+                  {
+                    "name": "Arizona State University",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  },
+                  {
+                    "name": "Maui Hawaiian Grill",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  },
+                  {
+                    "name": "Kiwanis Park",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3,
+                  }
+                ];
+                console.log(companies[1].name);  // Outputs: Company Name
+                document.write(companies[0].name);
+              </script>
+            </p>
+          </div>
+          
         
-        <div class="header">
-              <div class="main">
-                <ul>
-                  <li>
-                    <a href="/WDD231/">Home</a>
-                  </li>
-                  <li>
-                    <a href="/WDD231/chamber/directory.html">Directory</a>
-                  </li>
-                  <li>
-                    <a href="/WDD231/chamber/join.html">Join</a>
-                  </li>
-                  <li>
-                    <a href="/WDD231/chamber/discover.html">Discover</a>
-                  </li>
-                </ul>
-              </div>
         </div>
- 
-
-
-        <div id="box2">
-            <div class="text1">
-                <h1>Chamber of Commerce Directory | Tempe, Arizona</h1>
-            </div>
-                          
-        </div>
- 
-       
-
-
-        <!--Need 3 equal sizes-->
-        <div id="box3a">
-            <div class="text">
-             <div id="box13">
-                <!--begin script for JSON-->
-
-                <table id = "tb1" border = "0">
-                    <tr>
-                        <th>business name 1</th>
-                        <th>business tagline 1</th>
-                        <th>email 1</th>
-                        <th>phone 1</th>
-                        <th>URL 1</th>
-                    </tr>
-                    <tr>
-                        <th>business name 2</th>
-                        <th>business tagline 2</th>
-                        <th>email 2</th>
-                        <th>phone 2</th>
-                        <th>URL 2</th>
-                    </tr>
-                    <tr>
-                        <th>business name 3</th>
-                        <th>business tagline 3</th>
-                        <th>email 3</th>
-                        <th>phone 3</th>
-                        <th>URL 3</th>
-                    </tr>
-                </table>
-                <script>
-                    fetch("/chamber/data/members.json")
-                        .then(response => response.json())
-                        .then(data => {
-                            for (var i = 0; i<data.items.length; i++){
-                                let vbizname = data.items[i].bizname;
-                                let vbiztag = data.items[i].biztag;
-                                let vemail = data.items[i].email;
-                                let vphone = data.items[i].phone;
-                                let vurl = data.items[1].url;
-                                    document.querySelector("#tb1").innerHTML += `
-                                        <tr>
-                                            <td>${vbizname}</td>
-                                            <td>${vbiztag}</td>
-                                            <td>${vemail}</td>
-                                            <td>${vphone}</td>
-                                            <td>${vurl}</td>
-                                        </tr>`;
-                            }
-                        })
-                </script>
-               
-                <!--close script for JSON-->
-              </div>
-            </div>
-           
-        </div>
-
-        
-        <!--Start actual footer-->
-        <div id="footer">
-
-            <!--start three boxes for footer-->
-            <div id="box14">
-                <div id="box3left" input type="text" style="text-align: left">
-                    <p>Tempe Chamber of Commerce</p>
-                    <p>Place chamber info</p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="middle-column"></div>
-                <div id="box3center" input type="text" style="text-align: center">
-                    
-                    <div id="box55">
-                        <div id="box55a">
-                            <a href="https://www.facebook.com"> <img src="/images/FacebookLogo.png" width=”100″ height=”132″> </a>
-                        </div>
-                      
-                        <div id="box55b">
-                            <a href="https://www.linkedin.com"> <img src="/images/LinkedIn.png" width="100" height="132"> </a>
-                        </div>
-
-                        <div id="box55c">
-                            <a href="https://www.x.com"><img src="/images/xwhite.png" width="100" height="132" </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="box3right" input type="text" style="text-align: right">
-                    <p>WDD231 Class Project</p>
-                    <p>Derek J. Steele</p>
-                    <p>© Tempe Chamber of Commerce</p>
-                    <p></p>
-                    <p>Last updated:</p>
-                    <p id="date-time"></p>
-                    <script>
-                        const date = new Date(document.lastModified);
-                        document.getElementById("date-time").innerHTML = date;
-                    </script>
-                </div>
-            </div>
-            <!--close three boxes for footer-->
-        </div>
-        <!--Close actual footer-->
-
-            
-        </div>
+      </div>
     </div>
+  </div>
+
+  <br><br><br>
+
+  <div id="footer">
+    <p id="demo">
+      <script>
+        const date = new Date(document.lastModified);
+        document.getElementById("demo").innerHTML = date;
+      </script> | ©2024 Tempe, AZ Chamber of Commerce | WDD231 Class Project | Derek J. Steele
+    </p>
+  </div>
+
 </body>
- 
 </html>

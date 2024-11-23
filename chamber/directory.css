@@ -7,6 +7,15 @@ body { margin: 0; padding: 0; }
     height: 50px;
     background: darkblue;
     text-align: center;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 
@@ -33,6 +42,8 @@ body { margin: 0; padding: 0; }
     background: darkblue; 
     text-align: center;
     color: white;
+    margin-top: 20px;
+    padding: 20px 0;
 }
 
 
@@ -51,6 +62,7 @@ body { margin: 0; padding: 0; }
     border: 0px solid red;
     padding: .5rem .5rem;
     vertical-align: middle;
+    color: black;
   }
 
 
