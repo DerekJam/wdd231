@@ -1,0 +1,145 @@
+body { margin: 0; padding: 0; }
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: darkblue;
+    text-align: center;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+#content {
+    margin-top: 60px;
+}
+
+#top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: darkblue;
+    text-align: center;
+}
+
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: darkblue; 
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+
+
+
+.outer1 {
+    border: 0px solid black;
+    margin: 1rem;
+    padding: .5rem .5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .innerright1 {
+    display: inline-block;
+    border: 0px solid red;
+    padding: .5rem .5rem;
+    vertical-align: middle;
+    color: black;
+  }
+
+
+
+.outer1a {
+    border: 0px solid black;
+    margin: 1rem;
+    padding: .5rem .5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .innerright1a {
+    display: inline-block;
+    border: 0px solid red;
+    padding: .5rem .5rem;
+    vertical-align: middle;
+  }
+
+
+
+
+.outer2 {
+    border: 0px solid black;
+    margin: 1rem;
+    padding: .5rem .5rem;
+    text-align: center;
+  }
+
+
+
+
+
+  .outer3 {
+    border: 0px solid black;
+    margin: 1rem;
+    padding: .5rem .5rem;
+    text-align: center;
+  }
+
+  .innerleft3 {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+
+  .innerright3 {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+
+
+
+
+
+
+  
+  .outer4 {
+    border: 0px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+
+  .innerleft4 {
+    display: inline-block;
+    border: 0px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+
+  .innerright4 {
+    display: inline-block;
+    border: 0px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
