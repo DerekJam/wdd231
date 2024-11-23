@@ -7,15 +7,6 @@ body { margin: 0; padding: 0; }
     height: 50px;
     background: darkblue;
     text-align: center;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    padding-top: 5px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
 }
 
 
@@ -32,6 +23,8 @@ body { margin: 0; padding: 0; }
     text-align: center;
 }
 
+
+
 #footer {
   position: fixed;
   bottom: 0;
@@ -43,6 +36,7 @@ body { margin: 0; padding: 0; }
   margin-top: 20px;
   padding: 20px 0;
 }
+
 
 
 
@@ -59,7 +53,6 @@ body { margin: 0; padding: 0; }
     border: 0px solid red;
     padding: .5rem .5rem;
     vertical-align: middle;
-    color: black;
   }
 
 
@@ -140,19 +133,3 @@ body { margin: 0; padding: 0; }
     padding: 1rem 1rem;
     vertical-align: middle;
   }
-
-
-  section {
-    margin: 0.25rem;
-    padding: 0.35rem;
-    background-color: #eee;
-    border: 1px solid #bbb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .most {
-    background-color: #bed;
-  }
-
