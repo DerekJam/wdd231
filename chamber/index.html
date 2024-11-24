@@ -235,51 +235,32 @@
           <div class="col2" style="background:darkmagenta">
             <div class="headerdiv2">
               
+
+
+          <p id='company-name'>Waiting for data</p>
+          <p id='user-phone'>Waiting for data</p>
+          <p id='user-website'>Waiting for data</p>
+          <p id='user-contact'>Waiting for data</p>
+          <script>
+            fetch('data/members.json')
+              .then(response => response.json())
+              .then(data => {
+                const company = data.companies[0];
+
+                if (company) {
+                document.querySelector('#company-name').textContent = company.name
+                document.querySelector('#user-phone').textContent = company.phone
+                document.querySelector('#user-website').textContent = company.website
+                document.querySelector('#user-contact').textContent = company.contact
+              } else {
+                console.error('Not Found');
+              }
+              });
+          </script>
+
+
             </div>
-            <p>
-              <script type="text/javascript">
-                let companies = [
-                  {
-                    "name": "Tempe Public Library",
-                    "numberOfEmployees": 10000,
-                    "ceo": "Mary",
-                    "rating": 3.6,
-                  },
-                  {
-                    "name": "Arizona Mills Mall",
-                    "numberOfEmployees": 3,
-                    "ceo": null,
-                    "rating": 4.3,
-                  },
-                  {
-                    "name": "Tempe Town Lake",
-                    "numberOfEmployees": 3,
-                    "ceo": null,
-                    "rating": 4.3,
-                  },
-                  {
-                    "name": "Arizona State University",
-                    "numberOfEmployees": 3,
-                    "ceo": null,
-                    "rating": 4.3,
-                  },
-                  {
-                    "name": "Maui Hawaiian Grill",
-                    "numberOfEmployees": 3,
-                    "ceo": null,
-                    "rating": 4.3,
-                  },
-                  {
-                    "name": "Kiwanis Park",
-                    "numberOfEmployees": 3,
-                    "ceo": null,
-                    "rating": 4.3,
-                  }
-                ];
-                console.log(companies[1].name);  // Outputs: Company Name
-                document.write(companies[0].name);
-              </script>
-            </p>
+            
           </div>
           <div class="col2" style="background:lightseagreen">
             <div class="headerdiv">
@@ -287,6 +268,7 @@
             </div>
             <p>2 info</p>
           </div>
+          
           <div class="col2" style="background:green">
             <div class="headerdiv">
               

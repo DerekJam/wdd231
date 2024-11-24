@@ -1,27 +1,45 @@
-body { margin: 0; padding: 0; }
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-size: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
 
 #header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    background: darkblue;
-    text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: darkblue;
+  text-align: center;
 }
 
 
-#content {
-    margin-top: 60px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-#top {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    background: darkblue;
-    text-align: center;
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+section > p {
+  min-height: 60px;
+}
+
+
+
+
+.gridlines {
+  background-color: #bed;
+}
+
 
 
 
@@ -37,99 +55,6 @@ body { margin: 0; padding: 0; }
   padding: 20px 0;
 }
 
-
-
-
-.outer1 {
-    border: 0px solid black;
-    margin: 1rem;
-    padding: .5rem .5rem;
-    text-align: center;
-    color: white;
-  }
-
-  .innerright1 {
-    display: inline-block;
-    border: 0px solid red;
-    padding: .5rem .5rem;
-    vertical-align: middle;
-  }
-
-
-
-.outer1a {
-    border: 0px solid black;
-    margin: 1rem;
-    padding: .5rem .5rem;
-    text-align: center;
-    color: white;
-  }
-
-  .innerright1a {
-    display: inline-block;
-    border: 0px solid red;
-    padding: .5rem .5rem;
-    vertical-align: middle;
-  }
-
-
-
-
-.outer2 {
-    border: 0px solid black;
-    margin: 1rem;
-    padding: .5rem .5rem;
-    text-align: center;
-  }
-
-
-
-
-
-  .outer3 {
-    border: 0px solid black;
-    margin: 1rem;
-    padding: .5rem .5rem;
-    text-align: center;
-  }
-
-  .innerleft3 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-  .innerright3 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-
-
-
-
-
-  
-  .outer4 {
-    border: 0px solid black;
-    margin: 1rem;
-    padding: 2rem 2rem;
-    text-align: center;
-  }
-
-  .innerleft4 {
-    display: inline-block;
-    border: 0px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-  .innerright4 {
-    display: inline-block;
-    border: 0px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
+.text {
+  color: blue;
+}

@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="directory.css">
   <meta property="og:site_name" content="Tempe Chamber of Commerce Directory">
   <meta property="og:title" content="Tempe Chamber of Commerce Directory">
   <meta property="og:type" content="article" />
@@ -189,76 +189,59 @@
 
   
 
+  <main>
 
+    <div class="grid">
+      <section class="gridlines">
+        <p id='company-name'>Waiting for data</p>
+          <p id='user-phone'>Waiting for data</p>
+          <p id='user-website'>Waiting for data</p>
+          <p id='user-contact'>Waiting for data</p>
+          <script>
+            fetch('data/members.json')
+              .then(response => response.json())
+              .then(data => {
+                const company = data.companies[0];
 
-    <div class='outer3'>
-      <div class="headerdiv">
-        <div class="col-container2">
-          <div class="col2" style="background:darkmagenta">
-            <div class="headerdiv2">
-              
-            </div>
-            <p>
-              <script type="text/javascript">
-                let companies = [
-                  {
-                    "name": "Tempe Public Library",
-                    "numberOfEmployees": 100,
-                    "ceo": "Public",
-                    "rating": 7.1,
-                  },
-                  {
-                    "name": "Arizona Mills Mall",
-                    "numberOfEmployees": 3000,
-                    "ceo": null,
-                    "rating": 8.9,
-                  },
-                  {
-                    "name": "Tempe Town Lake",
-                    "numberOfEmployees": 3500,
-                    "ceo": null,
-                    "rating": 8.2,
-                  },
-                  {
-                    "name": "Arizona State University",
-                    "numberOfEmployees": 6000,
-                    "ceo": null,
-                    "rating": 8.5,
-                  },
-                  {
-                    "name": "Maui Hawaiian Grill",
-                    "numberOfEmployees": 10,
-                    "ceo": null,
-                    "rating": 9.0,
-                  },
-                  {
-                    "name": "Kiwanis Park",
-                    "numberOfEmployees": 100,
-                    "ceo": null,
-                    "rating": 7.9,
-                  }
-                ];
-                console.log(companies[1].name);  // Outputs: Company Name
-                document.write(companies[0].name);
-              </script>
-            </p>
-          </div>
-          <div class="col2" style="background:lightseagreen">
-            <div class="headerdiv">
-              
-            </div>
-            <p>2 info</p>
-          </div>
-          <div class="col2" style="background:green">
-            <div class="headerdiv">
-              
-            </div>
-            <p>3 info</p>
-          </div>
-        </div>
-      </div>
+                if (company) {
+                document.querySelector('#company-name').textContent = company.name
+                document.querySelector('#user-phone').textContent = company.phone
+                document.querySelector('#user-website').textContent = company.website
+                document.querySelector('#user-contact').textContent = company.contact
+              } else {
+                console.error('Not Found');
+              }
+              });
+          </script>
+      </section>
+
+      <section class="gridlines">
+        
+      </section>
+
+      <section class="gridlines">
+       
+      </section>
+
     </div>
-  </div>
+    <div class="grid">
+       <section class="gridlines">
+
+       </section>
+      <section class="gridlines">
+        
+      </section>
+
+       <section class="gridlines">
+                
+       </section>
+
+</div>
+
+
+
+ 
+  </main>
 
   <br><br><br>
 
