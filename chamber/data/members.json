@@ -1,39 +1,38 @@
 [
 	{
-		"name": "Tempe Public Library",
-		"numberOfEmployees": 10000,
-		"ceo": "Mary",
-		"rating": 3.6
-	  },
-	  {
-		"name": "Arizona Mills Mall",
-		"numberOfEmployees": 3,
-		"ceo": null,
-		"rating": 4.3
-	  },
-	  {
-		"name": "Tempe Town Lake",
-		"numberOfEmployees": 3,
-		"ceo": null,
-		"rating": 4.3
-	  },
-	  {
-		"name": "Arizona State University",
-		"numberOfEmployees": 3,
-		"ceo": null,
-		"rating": 4.3
-	  },
-	  {
-		"name": "Maui Hawaiian Grill",
-		"numberOfEmployees": 3,
-		"ceo": null,
-		"rating": 4.3
-	  },
-	  {
-		"name": "Kiwanis Park",
-		"numberOfEmployees": 3,
-		"ceo": null,
-		"rating": 4.3
-	  }
-
-]
+	  "name": "Tempe Public Library",
+	  "numberOfEmployees": 100,
+	  "ceo": "Public",
+	  "rating": 7.1
+	},
+	{
+	  "name": "Arizona Mills Mall",
+	  "numberOfEmployees": 3000,
+	  "ceo": null,
+	  "rating": 8.9
+	},
+	{
+	  "name": "Tempe Town Lake",
+	  "numberOfEmployees": 3500,
+	  "ceo": null,
+	  "rating": 8.2
+	},
+	{
+	  "name": "Arizona State University",
+	  "numberOfEmployees": 6000,
+	  "ceo": null,
+	  "rating": 8.5
+	},
+	{
+	  "name": "Maui Hawaiian Grill",
+	  "numberOfEmployees": 10,
+	  "ceo": null,
+	  "rating": 9.0
+	},
+	{
+	  "name": "Kiwanis Park",
+	  "numberOfEmployees": 100,
+	  "ceo": null,
+	  "rating": 7.9
+	}
+  ]
