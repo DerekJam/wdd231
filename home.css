@@ -105,3 +105,13 @@ dialog button {
 	top: 20px;
 	right: 20px;
 }
+
+
+.picture1 {
+	opacity: 0;
+	transition: opacity 230ms;
+}
+
+.picture1:hover {
+	opacity: 1;
+}
