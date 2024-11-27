@@ -175,7 +175,7 @@
   <br>
     <h1>
       <img src="https://github.com/DerekJam/wdd231/blob/2eb117b51791c6b35702b7c47d92790f48c7bf0e/images/tcclogo2.png?raw=true" alt="TCC Logo" width="50" height="auto">
-      Directory
+      Join the Tempe, AZ Chamber of Commerce
       <img src="https://github.com/DerekJam/wdd231/blob/2eb117b51791c6b35702b7c47d92790f48c7bf0e/images/tcclogo2.png?raw=true" alt="TCC Logo" width="50" height="auto">
     </h1>
 
@@ -194,48 +194,13 @@
 
     <div class="grid">
       <section class="gridlines">
-        <p id='company-name'>Waiting for data</p>
-          <p id='user-phone'>Waiting for data</p>
-          <p id='user-website'>Waiting for data</p>
-          <p id='user-contact'>Waiting for data</p>
-          <script>
-            fetch('data/members.json')
-              .then(response => response.json())
-              .then(data => {
-                const company = data.companies[0];
-
-                if (company) {
-                document.querySelector('#company-name').textContent = company.name
-                document.querySelector('#user-phone').textContent = company.phone
-                document.querySelector('#user-website').textContent = company.website
-                document.querySelector('#user-contact').textContent = company.contact
-              } else {
-                console.error('Not Found');
-              }
-              });
-          </script>
+        <p>Code for form goes here</p>
       </section>
 
-      <section class="gridlines">
-        
-      </section>
-
-      <section class="gridlines">
-       
-      </section>
+   
 
     </div>
-    <div class="grid">
-       <section class="gridlines">
-
-       </section>
-      <section class="gridlines">
-        
-      </section>
-
-       <section class="gridlines">
-                
-       </section>
+    
 
 </div>
 
