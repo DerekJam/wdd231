@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles/index.css">
   <meta property="og:site_name" content="Tempe Chamber of Commerce Directory">
   <meta property="og:title" content="Tempe Chamber of Commerce Directory">
   <meta property="og:type" content="article" />
@@ -13,7 +13,8 @@
   <meta property="og:description" content="Tempe Chamber of Commerce Directory for WDD231">
   <meta name="twitter:image:alt" content="Alt text for image">
   <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/data/favcham.ico">
-  
+  <title>Tempe Chamber of Commerce</title>
+
   <style>
     div a {
       text-decoration: none;
@@ -242,7 +243,7 @@
           <p id='user-website'>Waiting for data</p>
           <p id='user-contact'>Waiting for data</p>
           <script>
-            fetch('data/members.json')
+            fetch('scripts/members.json')
               .then(response => response.json())
               .then(data => {
                 const company = data.companies[0];
