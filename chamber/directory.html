@@ -80,7 +80,7 @@
           <p id='user-website'>Waiting for data</p>
           <p id='user-contact'>Waiting for data</p>
           <script>
-            fetch('data/members.json')
+            fetch('scripts/members.json')
               .then(response => response.json())
               .then(data => {
                 const company = data.companies[0];
