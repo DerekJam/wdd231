@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/join.css">
+  <meta property="og:site_name" content="Tempe Chamber of Commerce Join">
+  <meta property="og:title" content="Tempe Chamber of Commerce Join">
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://derekjam.github.io/WDD231/chamber/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:description" content="Tempe Chamber of Commerce Join for WDD231">
+  <meta name="twitter:image:alt" content="Alt text for image">
+  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/data/favcham.ico">
+  <title>Tempe Chamber of Commerce Join Response</title>
+</head>
+
+
+<body><br>
+  <h3>Thank you for joining the Tempe, Arizona Chamber of Commerce</h3>
+  <h4>Your first name: <span id="fname"></span></h4>
+  <h4>Your last name: <span id="lname"></span></h4>
+  <h4>Your organizational title: <span id="title"></span></h4>
+  <h4>Your email address: <span id="email"></span></h4>
+  <h4>Your mobile phone number: <span id="phone"></span></h4>
+  <h4>Your business/organization's name: <span id="bname"></span></h4>
+  <h4>Your business/organization's info: <span id="binfo"></span></h4>
+  <h4>Your membership level: <span id="level"></span></h4>
+  <h4>Date application submitted: <span id="date"></span></h4>
+
+  <script>
+
+    function getURLParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    document.getElementById("fname").textContent = getURLParameter("fname");
+    document.getElementById("email").textContent = getURLParameter("email");
+
+  </script>
+</body>
+
+
+
+
+</html>
