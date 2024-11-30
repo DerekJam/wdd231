@@ -238,10 +238,10 @@
               
 
 
-          <p id='company-name'>Waiting for data</p>
-          <p id='user-phone'>Waiting for data</p>
-          <p id='user-website'>Waiting for data</p>
-          <p id='user-contact'>Waiting for data</p>
+          <p id='company-name-0'>Waiting for data</p>
+          <p id='user-phone-0'>Waiting for data</p>
+          <p id='user-website-0'>Waiting for data</p>
+          <p id='user-contact-0'>Waiting for data</p>
           <script>
             fetch('scripts/members.json')
               .then(response => response.json())
@@ -249,10 +249,10 @@
                 const company = data.companies[0];
 
                 if (company) {
-                document.querySelector('#company-name').textContent = company.name
-                document.querySelector('#user-phone').textContent = company.phone
-                document.querySelector('#user-website').textContent = company.website
-                document.querySelector('#user-contact').textContent = company.contact
+                document.querySelector('#company-name-0').textContent = company.name
+                document.querySelector('#user-phone-0').textContent = company.phone
+                document.querySelector('#user-website-0').textContent = company.website
+                document.querySelector('#user-contact-0').textContent = company.contact
               } else {
                 console.error('Not Found');
               }
@@ -267,14 +267,58 @@
             <div class="headerdiv">
               
             </div>
-            <p>2 info</p>
-          </div>
+         
+            <p id='company-name-1'>Waiting for data</p>
+            <p id='user-phone-1'>Waiting for data</p>
+            <p id='user-website-1'>Waiting for data</p>
+            <p id='user-contact-1'>Waiting for data</p>
+            <script>
+              fetch('scripts/members.json')
+                .then(response => response.json())
+                .then(data => {
+                  const company = data.companies[1];
+  
+                  if (company) {
+                  document.querySelector('#company-name-1').textContent = company.name
+                  document.querySelector('#user-phone-1').textContent = company.phone
+                  document.querySelector('#user-website-1').textContent = company.website
+                  document.querySelector('#user-contact-1').textContent = company.contact
+                } else {
+                  console.error('Not Found');
+                }
+                });
+            </script>
+  
+  
+              </div>
           
           <div class="col2" style="background:green">
             <div class="headerdiv">
               
+           
+          <p id='company-name-2'>Waiting for data</p>
+          <p id='user-phone-2'>Waiting for data</p>
+          <p id='user-website-2'>Waiting for data</p>
+          <p id='user-contact-2'>Waiting for data</p>
+          <script>
+            fetch('scripts/members.json')
+              .then(response => response.json())
+              .then(data => {
+                const company = data.companies[2];
+
+                if (company) {
+                document.querySelector('#company-name-2').textContent = company.name
+                document.querySelector('#user-phone-2').textContent = company.phone
+                document.querySelector('#user-website-2').textContent = company.website
+                document.querySelector('#user-contact-2').textContent = company.contact
+              } else {
+                console.error('Not Found');
+              }
+              });
+          </script>
+
+
             </div>
-            <p>3 info</p>
           </div>
         </div>
       </div>
