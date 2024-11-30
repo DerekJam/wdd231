@@ -146,7 +146,7 @@ body { margin: 0; padding: 0; }
   }
   
   .col, .col2 {
-    flex: 1;
+    grid: 1;
     padding: 16px;
     min-height: 100px;
     padding: 1em;
