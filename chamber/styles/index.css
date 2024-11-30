@@ -133,3 +133,25 @@ body { margin: 0; padding: 0; }
     padding: 1rem 1rem;
     vertical-align: middle;
   }
+
+  
+
+  
+
+
+  .col-container, .col-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+  }
+  
+  .col, .col2 {
+    flex: 1;
+    padding: 16px;
+    min-height: 100px;
+    padding: 1em;
+    border: invisible;
+    margin: 2px;
+  }
+
+  
