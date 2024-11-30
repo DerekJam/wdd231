@@ -89,16 +89,27 @@
             <label for="email">Email address:</label>
             <input type="email" id="email" name="email" placeholder="Email" required><br><br>
             <label for="phone">Mobile phone number:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required><br><br>
+            <input type="phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required><br><br>
             <h3>Business Info</h3>
             <label for="bname">Business/organization's name:</label>
             <input type="text" id="info" name="bname" placeholder="Org name" required><br><br>
             <label for="binfo">Business/organization's info:</label>
             <input type="text" id="binfo" name="binfo" placeholder="Org info"><br><br>
-            <label for="level">Membership level:</label>
-            <input type="text" id="level" name="level" placeholder="Level"><br><br>
 
-            <input type="hidden" id="date" name="date"> 
+            <label for="level">Please select your membership level:</label><br>
+            <input type="radio" id="level_np" name="level" value="NP">
+            <label for="level_np">NP (non-profit)</label><br>
+            
+            <input type="radio" id="level_bronze" name="level" value="Bronze">
+            <label for="level_bronze">Bronze</label><br>
+            
+            <input type="radio" id="level_silver" name="level" value="Silver">
+            <label for="level_silver">Silver</label><br>
+            
+            <input type="radio" id="level_gold" name="level" value="Gold">
+            <label for="level_gold">Gold</label><br>
+
+            <input type="hidden" id="date" name="date"> <br><br>
 
 
             <input type="submit" value="Join">
