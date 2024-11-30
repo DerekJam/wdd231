@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/thankyou.css">
   <meta property="og:site_name" content="Tempe Chamber of Commerce Join">
   <meta property="og:title" content="Tempe Chamber of Commerce Join">
   <meta property="og:type" content="article" />
@@ -43,11 +43,16 @@
     document.getElementById("bname").textContent = getURLParameter("bname");
     document.getElementById("binfo").textContent = getURLParameter("binfo");
     document.getElementById("level").textContent = getURLParameter("level");
-    document.getElementById("date").textContent = getURLParameter("date");
+
+    const d = new Date();
+    document.getElementById("date").innerHTML = d;
 
 
 
   </script>
+
+
+
 </body>
 
 
