@@ -199,10 +199,21 @@ h4 {
   padding: 1.35rem;
 }
 
+dialog {
+	margin: 10% auto;
+	width: 100%;
+	max-width: 350px;
+	background-color: #fff;
+	padding: 25px;
+	border: 0;
+	border-radius: 0px;
+  }
+  
 dialog button {
-	position: absolute;
-	top: 20px;
-	right: 20px;
+	position: center;
+	top: 400px;
+	right: 200px;
+  
 }
 
 
@@ -229,6 +240,7 @@ dialog button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 
@@ -249,3 +261,6 @@ dialog button {
     padding: 1.35rem;
     color: black;
   }
+
+
+
