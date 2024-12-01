@@ -237,14 +237,7 @@ dialog button {
 
 
 
-.navigationz {
-	display: flex;
-	flex-direction: column;
-	width: 20%;
-	height: 20%;
-	list-style: none;
-	color: black;
-  }
+
 
 
 
