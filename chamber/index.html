@@ -20,7 +20,6 @@
   </style>
 </head>
 
-< translate="no">
   <br>
     <h1>
       <img src="https://github.com/DerekJam/wdd231/blob/2eb117b51791c6b35702b7c47d92790f48c7bf0e/images/tcclogo2.png?raw=true" alt="TCC Logo" width="50" height="auto">
@@ -70,6 +69,13 @@
 </div>
 <!--Above is new code to try-->
 
+
+
+<div class="grid3">
+  <section class="gridlines3" style="background: darkblue">
+    <h1><i>Chamber Members</i></h1><br>
+    
+</div>
 
 <!--Below is new code to try-->
   <div class="grid3">
@@ -151,25 +157,25 @@
       </script>
     </section>
   </section>
-  <section class="gridlines3" style="background:darkmagenta">
+  <section class="gridlines3" style="background:lightseagreen">
     <img src="images/tcclogo2.png" width="30" height="20"></img>
 
 
-    <p id='company-name-2'>Waiting for data</p>
-    <p id='user-phone-2'>Waiting for data</p>
-    <p id='user-website-2'>Waiting for data</p>
-    <p id='user-contact-2'>Waiting for data</p>
+    <p id='company-name-3'>Waiting for data</p>
+    <p id='user-phone-3'>Waiting for data</p>
+    <p id='user-website-3'>Waiting for data</p>
+    <p id='user-contact-3'>Waiting for data</p>
     <script>
     fetch('scripts/members.json')
     .then(response => response.json())
     .then(data => {
-    const company = data.companies[2];
+    const company = data.companies[3];
     
     if (company) {
-    document.querySelector('#company-name-2').textContent = company.name
-    document.querySelector('#user-phone-2').textContent = company.phone
-    document.querySelector('#user-website-2').textContent = company.website
-    document.querySelector('#user-contact-2').textContent = company.contact
+    document.querySelector('#company-name-3').textContent = company.name
+    document.querySelector('#user-phone-3').textContent = company.phone
+    document.querySelector('#user-website-3').textContent = company.website
+    document.querySelector('#user-contact-3').textContent = company.contact
     } else {
     console.error('Not Found');
     }
@@ -177,10 +183,32 @@
     </script>
   </section>
 </section>
-<section class="gridlines3" style="background:lightseagreen">
-
-</section>
 <section class="gridlines3" style="background:green">
+  <img src="images/tcclogo2.png" width="30" height="20"></img>
+
+
+  <p id='company-name-4'>Waiting for data</p>
+  <p id='user-phone-4'>Waiting for data</p>
+  <p id='user-website-4'>Waiting for data</p>
+  <p id='user-contact-4'>Waiting for data</p>
+  <script>
+  fetch('scripts/members.json')
+  .then(response => response.json())
+  .then(data => {
+  const company = data.companies[4];
+  
+  if (company) {
+  document.querySelector('#company-name-4').textContent = company.name
+  document.querySelector('#user-phone-4').textContent = company.phone
+  document.querySelector('#user-website-4').textContent = company.website
+  document.querySelector('#user-contact-4').textContent = company.contact
+  } else {
+  console.error('Not Found');
+  }
+  });
+  </script>
+</section>
+<section class="gridlines3" style="background:darkmagenta">
 
 </section>
   </div>
