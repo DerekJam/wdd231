@@ -12,7 +12,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:description" content="Tempe Chamber of Commerce Join for WDD231">
   <meta name="twitter:image:alt" content="Alt text for image">
-  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/data/favcham.ico">
+  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/images/favcham.ico">
   <title>Tempe Chamber of Commerce Join</title>
 
   <style>
@@ -69,28 +69,29 @@
   </nav>
 
   
+<!--NEW CODE TRYING FOR CARDS-->
 
-  <main>
+<!--Below is new code to try-->
 
-    <div class="grid">
-      <section class="gridlines">
-      
-          <h2>Join the Chamber </h2>
+<div class="grid">
+  <section class="gridlines" style="background: #bed">
+            <h2><i>Join the Chamber</i></h2>
           <form action="thankyou.html" method="get" target="_blank" autocomplete="on">
-            <h3>First and Last Name</h3>
+            <h3>First and Last Name</h3><br>
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" placeholder="First" required><br><br>
             <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" placeholder="Last" required><br><br>
-            <h3>Organizational Title</h3>
+            <input type="text" id="lname" name="lname" placeholder="Last" required><br><br><br>
+            <h3>Organizational Title</h3><br>
             <label for="title">Title:</label>
-            <input type="text" id="title" name="title" placeholder="Title"><br><br>
-            <h3>Contact Info</h3>
+            <input type="text" id="title" name="title" placeholder="Title"><br><br><br>
+            <h3>Contact Info</h3><br>
             <label for="email">Email address:</label>
             <input type="email" id="email" name="email" placeholder="Email" required><br><br>
             <label for="phone">Mobile phone number:</label>
             <input type="phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required><br><br>
-            <h3>Business Info</h3>
+            <br>
+            <h3>Business Info</h3><br>
             <label for="bname">Business/organization's name:</label>
             <input type="text" id="info" name="bname" placeholder="Org name" required><br><br>
             <label for="binfo">Business/organization's info:</label>
@@ -99,6 +100,7 @@
             <label for="level">Please select your membership level:</label><br>
             <input type="radio" id="level_np" name="level" value="NP">
             <label for="level_np">NP (non-profit)</label><br>
+
             
             <input type="radio" id="level_bronze" name="level" value="Bronze">
             <label for="level_bronze">Bronze</label><br>
@@ -108,6 +110,9 @@
             
             <input type="radio" id="level_gold" name="level" value="Gold">
             <label for="level_gold">Gold</label><br>
+           
+            
+           
 
             <input type="hidden" id="date" name="date"> <br><br>
     
@@ -118,21 +123,131 @@
             <input type="reset" value="Reset">
           </form>
      
+          
           <br>
+  </section>
 
+  <section class="gridlines3" style="background:green">
+    <h2><i>Membership Level Info</i></h2>
+
+    <!--NEW CODE FOR MODALS-->
+   
+
+
+    <div class="grid">
+      <section class="gridlines" style="background: #bed">
+        <h5>Non-Profit (NP)</h5>
+      </section>
+      <section class="gridlines" style="background: #bed">
+        <h5>Bronze</h5>
+      </section>
+      <section class="gridlines" style="background: #bed">
+      <h5>Silver</h5>
+      </section>
+      <section class="gridlines" style="background: #bed">
+      <h5>Gold</h5>
       </section>
 
 
 
-    </div>
-    
 
+
+
+    <!-- why isn't the below NavigationZ doing rows and not columns? -->
+  <nav class="navigationz">
+    <button class="open-button" id="openButton">
+      WDD 130
+     </button>
+    <dialog class="modal">
+    <button class="close-button" id="closeButton">
+    X      </button>
+    <p>Welcome to WDD 130!</p><p>This class serves as an introduction to Web design and development. The course is designed to introduce students to basics of Web technology, Web design and development principles. The course uses hands-on activities with students actually participating in simple Web design projects and programming. It is anticipated that students who complete this course will understand the fields of Web design and development and will have a good idea of whether or not they want to pursue Web design and development as a career.</p>
+    </dialog><br>
+
+    <button class="open-button" id="openButton">
+      WDD 230
+     </button>
+    <dialog class="modal">
+    <button class="close-button" id="closeButton">
+    X      </button>
+    <p>Welcome to WDD 130!</p><p>This class serves as an introduction to Web design and development. The course is designed to introduce students to basics of Web technology, Web design and development principles. The course uses hands-on activities with students actually participating in simple Web design projects and programming. It is anticipated that students who complete this course will understand the fields of Web design and development and will have a good idea of whether or not they want to pursue Web design and development as a career.</p>
+    </dialog><br>
+
+ 
+ <button class="open-button" id="openButton">
+  WDD 231
+ </button>
+<dialog class="modal">
+<button class="close-button" id="closeButton">
+X      </button>
+<p>Welcome to WDD 130!</p><p>This class serves as an introduction to Web design and development. The course is designed to introduce students to basics of Web technology, Web design and development principles. The course uses hands-on activities with students actually participating in simple Web design projects and programming. It is anticipated that students who complete this course will understand the fields of Web design and development and will have a good idea of whether or not they want to pursue Web design and development as a career.</p>
+</dialog><br>
+
+
+<button class="open-button" id="openButton">
+  CIT 160
+ </button>
+<dialog class="modal">
+<button class="close-button" id="closeButton">
+X      </button>
+<p>Welcome to WDD 130!</p><p>This class serves as an introduction to Web design and development. The course is designed to introduce students to basics of Web technology, Web design and development principles. The course uses hands-on activities with students actually participating in simple Web design projects and programming. It is anticipated that students who complete this course will understand the fields of Web design and development and will have a good idea of whether or not they want to pursue Web design and development as a career.</p>
+</dialog><br>
+
+<button class="open-button" id="openButton">
+ CIT 336
+ </button>
+<dialog class="modal">
+<button class="close-button" id="closeButton">
+X      </button>
+<p>Welcome to WDD 130!</p><p>This class serves as an introduction to Web design and development. The course is designed to introduce students to basics of Web technology, Web design and development principles. The course uses hands-on activities with students actually participating in simple Web design projects and programming. It is anticipated that students who complete this course will understand the fields of Web design and development and will have a good idea of whether or not they want to pursue Web design and development as a career.</p>
+</dialog><br>
+
+
+<button class="open-button" id="openButton">
+  WDD 499
+ </button>
+<dialog class="modal">
+<button class="close-button" id="closeButton">
+X      </button>
+<p>Welcome to WDD 130!</p><p>This class serves as an introduction to Web design and development. The course is designed to introduce students to basics of Web technology, Web design and development principles. The course uses hands-on activities with students actually participating in simple Web design projects and programming. It is anticipated that students who complete this course will understand the fields of Web design and development and will have a good idea of whether or not they want to pursue Web design and development as a career.</p>
+</dialog><br>
+
+
+ </nav>
+
+ 
+
+</section>
+
+ 
+
+
+
+   </div>
+<!--END NEW CODE FOR MODALS-->
+
+  </section>
 </div>
+<!--Above is new code to try-->
+<!--END NEW CODE TRYING FOR CARDS-->
+
+
+
+
+
+
+
+
+
 
 
 
  
-  </main>
+
+
+ 
+
+
 
   <br><br><br>
 
