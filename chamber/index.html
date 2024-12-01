@@ -16,164 +16,11 @@
   <title>Tempe Chamber of Commerce</title>
 
   <style>
-    div a {
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
-      padding: 15px;
-      display:inline-block;
-    }
-    ul {
-      display: inline;
-      margin: 0;
-      padding: 0;
-    }
-    ul li {
-      display: inline-block;
-    }
-    ul li:hover {
-      background: lightskyblue;
-    }
-    ul li:hover ul {
-      display: block;
-    }
-    ul li ul {
-      position: absolute;
-      width: 200px;
-      display: none;
-    }
-    @media screen and (max-width: 500px) {
-      .navbar a {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: left;
-      }
-    }
-    .headerdiv {
-      padding-top: 5px;
-      padding-right: 15px;
-      padding-bottom: 5px;
-      padding-left: 15px;
-      text-align: center;
-      background: transparent;
-      color: white;
-      font-size: 14px;
-    }
-    .col-container {
-      display: table;
-      width: 100%;
-    }
-    .col {
-      display: table-cell;
-      padding: 16px;
-    }
-    .col-container2 {
-      display: table;
-      width: 100%;
-    }
-    .col2 {
-      display: table-cell;
-      padding: 16px;
-    }
-    body {
-      background-color: #006ff7;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    h1 {
-      text-align: left;
-      font-family: times, serif;
-      font-size: 1.5rem;
-      margin-left: 1rem;
-    }
-    h2 {
-      font-size: 1.2rem;
-      color: navy;
-      text-align: left;
-      margin: 1rem;
-    }
-    nav {
-      max-width: 100%;
-      margin: 1rem auto;
-    }
-    #menu {
-      font-size: 1.5rem;
-      border: 0;
-      background: none;
-      color: #000;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-    #menu::before {
-      content: "☰";
-    }
-    #menu.open::before {
-      content: "❎";
-    }
-    .navigation {
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      background-color: #333;
-      color: #fff;
-    }
-    .navigation a {
-      display: none;
-      padding: 1rem;
-      text-align: center;
-      text-decoration: none;
-      color: #fff;
-    }
-    .navigation a:hover {
-      background-color: #00fffb;
-      color: #333;
-      font-weight: 700;
-    }
-    .open a {
-      display: block;
-    }
-    .mainbox {
-      margin: 0m;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background-color: #006ff7;
-      max-width: 100%;
-      height: 100vh;
-    }
-    @media (min-width: 37.5em) {
-      h1 {
-        font-size: 2.5rem;
-        margin-left: 0;
-        text-align: center;
-      }
-      h2 {
-        font-size: 2rem;
-        text-align: center;
-      }
-      #menu {
-        display: none;
-      }
-      .navigation {
-        flex-direction: row;
-      }
-      .navigation a {
-        display: block;
-        flex: 1 1 100%;
-      }
-      .mainbox {
-        margin: 1rem auto;
-      }
-    }
-
-    
+   
   </style>
 </head>
 
-<body translate="no">
+< translate="no">
   <br>
     <h1>
       <img src="https://github.com/DerekJam/wdd231/blob/2eb117b51791c6b35702b7c47d92790f48c7bf0e/images/tcclogo2.png?raw=true" alt="TCC Logo" width="50" height="auto">
@@ -199,143 +46,151 @@
 
 
 
+<!--Below is new code to try-->
+
+<div class="grid3">
+  <section class="gridlines3" style="background: green">
+    <h1>Weather</h1><br>
+    <p>
+      <script src="scripts/weather.js"></script>
+      <main>
+          <figure><br>
+            <img id="weather-icon" src="https://github.com/DerekJam/wdd231/blob/main/images/clouds.png?raw=true" alt="clouds" width="60" height="60">
+            <figcaption></figcaption>
+          </figure>
+        </main>
+    </p>
+  </section>
+  <section class="gridlines3" style="background:darkmagenta">
+    <h1>Events</h1>
+  <br><p>On January 1, 2025, Movie in the Park</p><br>
+  <p>On February 3, 2025, FREE popcorn</p><br>
+  <p>On March 4, 2025, Chalk Walk (more details to come)</p><br>
+  </section>
+</div>
+<!--Above is new code to try-->
 
 
+<!--Below is new code to try-->
+  <div class="grid3">
+    <section class="gridlines3" style="background: darkmagenta">
+      <img src="images/tcclogo2.png" width="30" height="20"></img>
 
-
-
-      <div class='outer2'>
-        <div class="headerdiv">
-          <div class="col-container">
-            <div class="col" style="background:green">
-              <div class="headerdiv">
-                <h1>Weather</h1>
-              </div><br>
-              <p>
-
-
-
-
-                
-                <script src="scripts/weather.js"></script>
-                <main>
-                    <figure><br>
-                      <img id="weather-icon" src="https://github.com/DerekJam/wdd231/blob/main/images/clouds.png?raw=true" alt="clouds" width="60" height="60">
-                      <figcaption></figcaption>
-                    </figure>
-                  </main>
-
-
-              </p>
-            </div>
-            <div class="col" style="background:darkmagenta">
-              <div class="headerdiv">
-                <h1>Events</h1>
-              </div>
-              <br><p>On January 1, 2025, Movie in the Park</p><br>
-              <p>On February 3, 2025, FREE popcorn</p><br>
-              <p>On March 4, 2025, Chalk Walk (more details to come)</p><br>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class='outer3'>
-      <div class="headerdiv">
-        <div class="col-container2">
-          <div class="col2" style="background:darkmagenta">
-            <div class="headerdiv2">
-              
-              <img src="images/tcclogo2.png" width="30" height="20"></img>
-
-          <p id='company-name-0'>Waiting for data</p>
-          <p id='user-phone-0'>Waiting for data</p>
-          <p id='user-website-0'>Waiting for data</p>
-          <p id='user-contact-0'>Waiting for data</p>
-          <script>
-            fetch('scripts/members.json')
-              .then(response => response.json())
-              .then(data => {
-                const company = data.companies[0];
-
-                if (company) {
-                document.querySelector('#company-name-0').textContent = company.name
-                document.querySelector('#user-phone-0').textContent = company.phone
-                document.querySelector('#user-website-0').textContent = company.website
-                document.querySelector('#user-contact-0').textContent = company.contact
-              } else {
-                console.error('Not Found');
-              }
-              });
-          </script>
-
-
-            </div>
-            
-          </div>
-          <div class="col2" style="background:lightseagreen">
-            <div class="headerdiv">
-              
-            </div>
-
-            <img src="images/tcclogo2.png" width="30" height="20"></img>
-
-            <p id='company-name-1'>Waiting for data</p>
-            <p id='user-phone-1'>Waiting for data</p>
-            <p id='user-website-1'>Waiting for data</p>
-            <p id='user-contact-1'>Waiting for data</p>
-            <script>
-              fetch('scripts/members.json')
-                .then(response => response.json())
-                .then(data => {
-                  const company = data.companies[1];
+      <p id='company-name-0'>Waiting for data</p>
+      <p id='user-phone-0'>Waiting for data</p>
+      <p id='user-website-0'>Waiting for data</p>
+      <p id='user-contact-0'>Waiting for data</p>
+      <script>
+        fetch('scripts/members.json')
+          .then(response => response.json())
+          .then(data => {
+            const company = data.companies[0];
   
-                  if (company) {
-                  document.querySelector('#company-name-1').textContent = company.name
-                  document.querySelector('#user-phone-1').textContent = company.phone
-                  document.querySelector('#user-website-1').textContent = company.website
-                  document.querySelector('#user-contact-1').textContent = company.contact
-                } else {
-                  console.error('Not Found');
-                }
-                });
-            </script>
+            if (company) {
+            document.querySelector('#company-name-0').textContent = company.name
+            document.querySelector('#user-phone-0').textContent = company.phone
+            document.querySelector('#user-website-0').textContent = company.website
+            document.querySelector('#user-contact-0').textContent = company.contact
+          } else {
+            console.error('Not Found');
+          }
+          });
+      </script>
+    </section>
+
+    <section class="gridlines3" style="background:lightseagreen">
+                   
+        <img src="images/tcclogo2.png" width="30" height="20"></img>
+
+        <p id='company-name-1'>Waiting for data</p>
+        <p id='user-phone-1'>Waiting for data</p>
+        <p id='user-website-1'>Waiting for data</p>
+        <p id='user-contact-1'>Waiting for data</p>
+        <script>
+          fetch('scripts/members.json')
+            .then(response => response.json())
+            .then(data => {
+              const company = data.companies[1];
   
-  
-              </div>
-          
-          <div class="col2" style="background:green">
-            <div class="headerdiv">
-              
-                        <img src="images/tcclogo2.png" width="30" height="20"></img>
+              if (company) {
+              document.querySelector('#company-name-1').textContent = company.name
+              document.querySelector('#user-phone-1').textContent = company.phone
+              document.querySelector('#user-website-1').textContent = company.website
+              document.querySelector('#user-contact-1').textContent = company.contact
+            } else {
+              console.error('Not Found');
+            }
+            });
+        </script>   
+    </section>
+    
 
-           
-          <p id='company-name-2'>Waiting for data</p>
-          <p id='user-phone-2'>Waiting for data</p>
-          <p id='user-website-2'>Waiting for data</p>
-          <p id='user-contact-2'>Waiting for data</p>
-          <script>
-            fetch('scripts/members.json')
-              .then(response => response.json())
-              .then(data => {
-                const company = data.companies[2];
-
-                if (company) {
-                document.querySelector('#company-name-2').textContent = company.name
-                document.querySelector('#user-phone-2').textContent = company.phone
-                document.querySelector('#user-website-2').textContent = company.website
-                document.querySelector('#user-contact-2').textContent = company.contact
-              } else {
-                console.error('Not Found');
-              }
-              });
-          </script>
+    <section class="gridlines3" style="background:green">
+      <img src="images/tcclogo2.png" width="30" height="20"></img>
 
 
-            </div>
-          </div>
-        </div>
+      <p id='company-name-2'>Waiting for data</p>
+      <p id='user-phone-2'>Waiting for data</p>
+      <p id='user-website-2'>Waiting for data</p>
+      <p id='user-contact-2'>Waiting for data</p>
+      <script>
+      fetch('scripts/members.json')
+      .then(response => response.json())
+      .then(data => {
+      const company = data.companies[2];
+      
+      if (company) {
+      document.querySelector('#company-name-2').textContent = company.name
+      document.querySelector('#user-phone-2').textContent = company.phone
+      document.querySelector('#user-website-2').textContent = company.website
+      document.querySelector('#user-contact-2').textContent = company.contact
+      } else {
+      console.error('Not Found');
+      }
+      });
+      </script>
+    </section>
+  </section>
+  <section class="gridlines3" style="background:darkmagenta">
+    <img src="images/tcclogo2.png" width="30" height="20"></img>
+
+
+    <p id='company-name-2'>Waiting for data</p>
+    <p id='user-phone-2'>Waiting for data</p>
+    <p id='user-website-2'>Waiting for data</p>
+    <p id='user-contact-2'>Waiting for data</p>
+    <script>
+    fetch('scripts/members.json')
+    .then(response => response.json())
+    .then(data => {
+    const company = data.companies[2];
+    
+    if (company) {
+    document.querySelector('#company-name-2').textContent = company.name
+    document.querySelector('#user-phone-2').textContent = company.phone
+    document.querySelector('#user-website-2').textContent = company.website
+    document.querySelector('#user-contact-2').textContent = company.contact
+    } else {
+    console.error('Not Found');
+    }
+    });
+    </script>
+  </section>
+</section>
+<section class="gridlines3" style="background:lightseagreen">
+
+</section>
+<section class="gridlines3" style="background:green">
+
+</section>
+  </div>
+  <!--Above is new code to try-->
+
+
+
+
+
+         
       </div>
     </div>
   </div>
