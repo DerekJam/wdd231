@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="mainindex.css">
+
+  <!--below is code for background image on entire webpage-->
+<style>
+     body {
+  background-image: url('https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Hero-Images/Phoenix-cityscape_603abd2f6782d45765146edc48eb2baa.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
+<!--above ends the code for background image on entire webpage-->
+
+  <style>
+          div a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            display:inline-block;
+          }
+          ul {
+            display: inline;
+            margin: 0;
+            padding: 0;
+          }
+          ul li {display: inline-block;}
+          ul li:hover {background: lightskyblue;}
+          ul li:hover ul {display: block;}
+          ul li ul {
+            position: absolute;
+            width: 200px;
+            display: none;
+          }
+
+                    @media screen and (max-width: 500px) {
+            .navbar a {
+              float: none;
+              display: block;
+              width: 100%;
+              text-align: left;
+            }
+          }
+  </style>
+</head>
+<body>
+<div id="header">
+  <ul>
+    <li>
+    <a href="https://derekjam.github.io/WDD231/">Home</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/WDD231/chamber/">Chamber</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">GitHub Profile</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+      </li>
+    </ul>
+</div>
+
+<div id="content">
+    
+    <div class='outer1'>
+      <div class='innerleft1'><img src="me-image.png" width="225" height="auto"></div>
+      <div class='innerright1'><h1>Derek J. Steele</h1></div>
+    </div>
+
+    <div class='outer2'>
+      <div class='innerleft2'>left</div>
+      <div class='innerright2'>right</div>
+    </div>
+
+    <div class='outer3'>
+      <div class='innerleft3'>left</div>
+      <div class='innerright3'>right</div>
+    </div>
+
+    <div class='outer4'>
+      <div class='innerleft5'>left</div>
+      <div class='innerright5'>right</div>
+    </div>
+
+    <div class='outer5'>
+      <div class='innerleft5'>left</div>
+      <div class='innerright5'>right</div>
+    </div>
+
+</div>
+
+<div id="footer">
+  
+  <p id="demo">
+  <script>
+  const date = new Date(document.lastModified);
+  document.getElementById("demo").innerHTML = date;
+  </script> | ©2024 | Derek J. Steele | USA</p>
+</div>
+
+</body>
+</html>
+
