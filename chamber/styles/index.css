@@ -344,6 +344,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
 }
 
+
+
 .gridlines3 {
 	background-color: teal;
 	text-align: center;

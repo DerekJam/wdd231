@@ -41,6 +41,11 @@ section > p {
 }
 
 
+.gridlines2 {
+  background-color: #bed;
+  animation-name: animated;
+  animation-duration: 4s;
+}
 
 
 #footer {
@@ -219,7 +224,7 @@ dialog button {
 }
 
 @keyframes animated {
-  50%  {background-color: blue;}
+  50%  {background-color: lightseagreen;}
 }
 
 
@@ -244,8 +249,6 @@ dialog button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation-name: animated;
-  animation-duration: 4s;
 }
 
 
