@@ -389,3 +389,7 @@ body {
   align-items: center;
 }
 
+.responsive {
+  width: 50%;
+  height: auto;
+}
