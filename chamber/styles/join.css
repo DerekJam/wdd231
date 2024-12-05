@@ -204,6 +204,17 @@ h4 {
   padding: 1.35rem;
 }
 
+
+h5 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin: 0.25rem;
+  padding: 1.35rem;
+  color: black;
+}
+
+
 dialog {
 	margin: 10% auto;
 	width: 100%;
@@ -260,15 +271,6 @@ dialog button {
 
 
 
-
-  h5 {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 1rem;
-    margin: 0.25rem;
-    padding: 1.35rem;
-    color: black;
-  }
 
 
 
