@@ -1,173 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/discover.css">
-  <meta property="og:site_name" content="Tempe Chamber of Commerce Discover">
-  <meta property="og:title" content="Tempe Chamber of Commerce Discover">
+  <link rel="stylesheet" href="styles/join.css">
+  <meta property="og:site_name" content="Tempe Chamber of Commerce Join">
+  <meta property="og:title" content="Tempe Chamber of Commerce Join">
   <meta property="og:type" content="article" />
   <meta property="og:image" content="">
   <meta property="og:url" content="https://derekjam.github.io/WDD231/chamber/index.html">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:description" content="Tempe Chamber of Commerce Discover for WDD231">
+  <meta property="og:description" content="Tempe Chamber of Commerce Join for WDD231">
   <meta name="twitter:image:alt" content="Alt text for image">
-  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/data/favcham.ico">
-  <title>Discover Tempe Chamber of Commerce</title>
+  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/images/favcham.ico">
+  <title>Tempe Chamber of Commerce Join</title>
 
   <style>
-    div a {
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
-      padding: 15px;
-      display:inline-block;
-    }
-    ul {
-      display: inline;
-      margin: 0;
-      padding: 0;
-    }
-    ul li {
-      display: inline-block;
-    }
-    ul li:hover {
-      background: lightskyblue;
-    }
-    ul li:hover ul {
-      display: block;
-    }
-    ul li ul {
-      position: absolute;
-      width: 200px;
-      display: none;
-    }
     @media screen and (max-width: 500px) {
-      .navbar a {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: left;
-      }
-    }
-    .headerdiv {
-      padding-top: 5px;
-      padding-right: 15px;
-      padding-bottom: 5px;
-      padding-left: 15px;
-      text-align: center;
-      background: transparent;
-      color: white;
-      font-size: 14px;
-    }
-    .col-container {
-      display: table;
-      width: 100%;
-    }
-    .col {
-      display: table-cell;
-      padding: 16px;
-    }
-    .col-container2 {
-      display: table;
-      width: 100%;
-    }
-    .col2 {
-      display: table-cell;
-      padding: 16px;
-    }
-    body {
-      background-color: #006ff7;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    h1 {
-      text-align: left;
-      font-family: times, serif;
-      font-size: 1.5rem;
-      margin-left: 1rem;
-    }
-    h2 {
-      font-size: 1.2rem;
-      color: navy;
-      text-align: left;
-      margin: 1rem;
-    }
-    nav {
-      max-width: 100%;
-      margin: 1rem auto;
-    }
-    #menu {
-      font-size: 1.5rem;
-      border: 0;
-      background: none;
-      color: #000;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-    #menu::before {
-      content: "☰";
-    }
-    #menu.open::before {
-      content: "❎";
-    }
-    .navigation {
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      background-color: #333;
-      color: #fff;
-    }
-    .navigation a {
-      display: none;
-      padding: 1rem;
-      text-align: center;
-      text-decoration: none;
-      color: #fff;
-    }
-    .navigation a:hover {
-      background-color: #00fffb;
-      color: #333;
-      font-weight: 700;
-    }
-    .open a {
-      display: block;
-    }
-    .mainbox {
-      margin: 0m;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background-color: #006ff7;
-      max-width: 100%;
-      height: 100vh;
-    }
-    @media (min-width: 37.5em) {
-      h1 {
-        font-size: 2.5rem;
-        margin-left: 0;
-        text-align: center;
-      }
-      h2 {
-        font-size: 2rem;
-        text-align: center;
-      }
-      #menu {
-        display: none;
-      }
-      .navigation {
-        flex-direction: row;
-      }
-      .navigation a {
-        display: block;
-        flex: 1 1 100%;
-      }
-      .mainbox {
-        margin: 1rem auto;
-      }
-    }
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+@media (min-width: 37.5em) {
+  h1 {
+    font-size: 2.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #menu {
+    display: none;
+  }
+  .navigation {
+    flex-direction: row;
+  }
+  .navigation a {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .mainbox {
+    margin: 1rem auto;
+  }
+}
   </style>
 </head>
 
@@ -175,7 +56,7 @@
   <br>
     <h1>
       <img src="https://github.com/DerekJam/wdd231/blob/2eb117b51791c6b35702b7c47d92790f48c7bf0e/images/tcclogo2.png?raw=true" alt="TCC Logo" width="50" height="auto">
-      Directory
+      Discover the Tempe, AZ Chamber of Commerce
       <img src="https://github.com/DerekJam/wdd231/blob/2eb117b51791c6b35702b7c47d92790f48c7bf0e/images/tcclogo2.png?raw=true" alt="TCC Logo" width="50" height="auto">
     </h1>
 
@@ -189,60 +70,111 @@
   </nav>
 
   
+<!--NEW CODE TRYING FOR CARDS-->
 
-  <main>
+<!--Below is new code to try-->
 
+<div class="grid">
+  <section class="gridlines2">
+            <h2><i>Complete the form to join</i></h2>
+          
+          <br>
+  </section>
+
+  <section class="gridlines3" style="background:rgb(109, 235, 136)">
+    <h2><i>Membership Level Info</i></h2>
+
+    <!--NEW CODE FOR MODALS-->
+   
+
+    <script src="scripts/join.js"></script>
     <div class="grid">
-      <section class="gridlines">
-        <p id='company-name'>Waiting for data</p>
-          <p id='user-phone'>Waiting for data</p>
-          <p id='user-website'>Waiting for data</p>
-          <p id='user-contact'>Waiting for data</p>
-          <script>
-            fetch('prophets/scripts/prophets.json')
-              .then(response => response.json())
-              .then(data => {
-                const company = data.companies[0];
-
-                if (company) {
-                document.querySelector('#company-name').textContent = company.name
-                document.querySelector('#user-phone').textContent = company.phone
-                document.querySelector('#user-website').textContent = company.website
-                document.querySelector('#user-contact').textContent = company.contact
-              } else {
-                console.error('Not Found');
-              }
-              });
-          </script>
+      <section class="gridlines" style="background: #bed">
+        <h11>Non-Profit (NP)</h11>
+        <button class="open-button" id="openButtonNP">
+          Learn more
+         </button>
+        <dialog class="modal" id="modalNP">
+        <button class="close-button" id="closeButtonNP">
+        X      </button>
+        <p>Non-Profit (NP)</p><p>This membership level is for non profit organizations and there is no fee </p>
+        </dialog><br>
       </section>
 
-      <section class="gridlines">
-        
+      <section class="gridlines" style="background: #bed">
+        <h11>Bronze</h11>
+
+        <button class="open-button" id="openButtonBr">
+          Learn more
+         </button>
+        <dialog class="modal" id="modalBr">
+        <button class="close-button" id="closeButtonBr">
+        X      </button>
+        <p>Welcome to Bronze!</p><p>This level...</p>
+        </dialog><br>
       </section>
 
-      <section class="gridlines">
-       
+      <section class="gridlines" style="background: #bed">
+      <h11>Silver</h11>
+      <button class="open-button" id="openButtonSil">
+      Learn more
+       </button>
+      <dialog class="modal" id="modalSil">
+      <button class="close-button" id="closeButtonSil">
+      X      </button>
+      <p>Welcome to Silver!</p><p>This level...</p>
+      </dialog><br>
       </section>
 
-    </div>
-    <div class="grid">
-       <section class="gridlines">
-
-       </section>
-      <section class="gridlines">
-        
+      <section class="gridlines" style="background: #bed">
+      <h11>Gold</h11>
+      <button class="open-button" id="openButtonGold">
+      Learn more       
+      </button>
+      <dialog class="modal" id="modalGold">
+      <button class="close-button" id="closeButtonGold">
+      X      </button>
+      <p>Welcome to Gold!</p><p>This level...</p>
+      </dialog><br>
       </section>
 
-       <section class="gridlines">
-                
-       </section>
 
+
+
+
+
+
+</section>
+
+ 
+
+
+
+   </div>
+<!--END NEW CODE FOR MODALS-->
+
+  </section>
 </div>
+<!--Above is new code to try-->
+<!--END NEW CODE TRYING FOR CARDS-->
+
+
+
+
+
+
+
+
+
 
 
 
  
-  </main>
+
+
+ 
+
+
 
   <br><br><br>
 
