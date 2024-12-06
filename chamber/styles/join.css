@@ -288,7 +288,7 @@ h11 {
   padding-bottom: 5px;
   padding-left: 15px;
   text-align: center;
-  background: transparent;
+  background: green;
   color: white;
   font-size: 14px;  
   margin: 0.25rem;
@@ -298,6 +298,7 @@ h11 {
   align-items: center;
   width: 60%;
   margin-left: 100px;
+  border: none;
 }
 
 .gridlines5 {
@@ -307,7 +308,7 @@ h11 {
   padding-bottom: 5px;
   padding-left: 15px;
   text-align: center;
-  background: transparent;
+  background: darkmagenta;
   color: white;
   font-size: 14px;  
   margin: 0.25rem;
@@ -317,6 +318,7 @@ h11 {
   align-items: center;
   width: 90%;
   margin-right: 100px;
+  border: none;
 }
 
 .gridlines99 {
@@ -325,7 +327,7 @@ h11 {
   padding-right: 15px;
   padding-bottom: 5px;
   padding-left: 15px;
-  text-align: center;
+  text-align: right;
   background: transparent;
   color: white;
   font-size: 14px;  
