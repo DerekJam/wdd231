@@ -281,3 +281,42 @@ h11 {
 
 
 
+.gridlines4 {
+	background-color: #bed;
+	text-align: center;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  text-align: center;
+  background: transparent;
+  color: white;
+  font-size: 14px;  
+  margin: 0.25rem;
+  padding: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-left: 100px;
+}
+
+.gridlines5 {
+	background-color: #bed;
+	text-align: center;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  text-align: center;
+  background: transparent;
+  color: white;
+  font-size: 14px;  
+  margin: 0.25rem;
+  padding: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-right: 100px;
+}
