@@ -74,6 +74,79 @@
 <!--Below is new code to try-->
 <body>
 
+  <div class="grid">
+    <section class="gridlines77">
+
+                                    <!--Try HTML and JS for Greetings time stamped below-->
+                                    <div>
+                                      <script type = "text/javascript">
+                                        var days = 730; // the cookie will expire = 2 years
+                                        var lastvisit=new Object();
+                                        var firstvisitmsg="<p style='font-size:18px; color:white; align:center'>Welcome to the Discover page for the Tempe, AZ Chamber of Commerce for the first time!</p> <p style='font-size:18px; color:white; align:center'>Enjoy!</p>"; 
+                                        lastvisit.subsequentvisitmsg="<p style='font-size:18px; color:white'>Welcome back!</p> <p style='font-size:18px; color:white'>You last visited the <em>Discover the Tempe, AZ Chamber of Commerce</em> page on</p> <p style='font-size:18px; color:white;'>[date_displayed]</p>";
+                                        
+                                        lastvisit.getCookie=function(Name){ 
+                                        var re=new RegExp(Name+"=[^;]+", "i"); 
+                                        if (document.cookie.match(re)) 
+                                        return document.cookie.match(re)[0].split("=")[1];
+                                        return''; 
+                                        }
+                                        
+                                        lastvisit.setCookie=function(name, value, days){ 
+                                        var expireDate = new Date();
+                                        
+                                        var expstring=expireDate.setDate(expireDate.getDate()+parseInt(days));
+                                        document.cookie = name+"="+value+"; expires="+expireDate.toGMTString()+"; path=/";
+                                        }
+                                        
+                                        lastvisit.showmessage = function() {
+                                        var wh = new Date();
+                                        if (lastvisit.getCookie("visit_record") == "") { 
+                                        lastvisit.setCookie("visit_record", wh, days); 
+                                        document.write(firstvisitmsg);
+                                        }
+                                        
+                                        else {
+                                        var lv = lastvisit.getCookie("visit_record");
+                                        var lvp = Date.parse(lv);
+                                        var now = new Date();
+                                        now.setTime(lvp);
+                                        var day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                        var month = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                        var dd = now.getDate();
+                                        var dy = now.getDay();
+                                        dy = day[dy];
+                                        var mn = now.getMonth();
+                                        mn = month[mn];
+                                        yy = now.getFullYear();
+                                        var hh = now.getHours();
+                                        var ampm = "AM";
+                                        if (hh >= 12) {ampm = "PM"}
+                                        if (hh >12){hh = hh - 12};
+                                        if (hh == 0) {hh = 12}
+                                        if (hh < 10) {hh = "0" + hh};
+                                        var mins = now.getMinutes();
+                                        if (mins < 10) {mins = "0"+ mins}
+                                        var secs = now.getSeconds();
+                                        if (secs < 10) {secs = "0" + secs}
+                                        var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
+                                        document.write(lastvisit.subsequentvisitmsg.replace("\[date_displayed\]", dispDate))
+                                        }
+                                        
+                                        lastvisit.setCookie("visit_record", wh, days);
+                                        
+                                        }
+                                        
+                                        lastvisit.showmessage();
+                                        </script>
+                                        
+                                    </div>
+                                  <!--END HTML and JS for Greetings time stamped above-->
+  
+    </section>
+  </div>
+
+
 
   <div class="grid">
     <section class="gridlines4">
@@ -90,9 +163,30 @@
     <section class="gridlines5">
       <p><i>Images of</i> <b>Tempe, Arizona</b><br>
       </p>
-     <section class="gridlines98"><img src="images/wf.webp" alt="Wireframe" width="350" height="auto"></section>
+     <section class="gridlines98"><img src="images/1.webp" alt="Wireframe" width="50%" height="auto"></section>
      <br>
-    </section>
+
+    <section class="gridlines98"><img src="images/2.webp" alt="Wireframe" width="50%" height="auto"></section>
+    <br>
+
+   <section class="gridlines98"><img src="images/3.webp" alt="Wireframe" width="50%" height="auto"></section>
+   <br>
+
+  <section class="gridlines98"><img src="images/4.webp" alt="Wireframe" width="50%" height="auto"></section>
+  <br>
+
+ <section class="gridlines98"><img src="images/5.webp" alt="Wireframe" width="50%" height="auto"></section>
+ <br>
+
+<section class="gridlines98"><img src="images/6.webp" alt="Wireframe" width="50%" height="auto"></section>
+<br>
+
+<section class="gridlines98"><img src="images/7.webp" alt="Wireframe" width="50%" height="auto"></section>
+<br>
+
+<section class="gridlines98"><img src="images/8.webp" alt="Wireframe" width="50%" height="auto"></section>
+<br>
+</section>
   </div>
 
 
