@@ -282,7 +282,6 @@ h11 {
 
 
 .gridlines4 {
-	background-color: #bed;
 	text-align: center;
   padding-top: 5px;
   padding-right: 15px;
@@ -302,7 +301,6 @@ h11 {
 }
 
 .gridlines5 {
-	background-color: #bed;
 	text-align: center;
   padding-top: 5px;
   padding-right: 15px;
@@ -322,7 +320,6 @@ h11 {
 }
 
 .gridlines99 {
-	background-color: #bed;
 	text-align: center;
   padding-top: 5px;
   padding-right: 15px;
@@ -338,10 +335,10 @@ h11 {
   flex-direction: column;
   align-items: center;
   width: 60%;
+  border: none;
 }
 
 .gridlines98 {
-	background-color: #bed;
 	text-align: center;
   padding-top: 5px;
   padding-right: 15px;
@@ -356,10 +353,10 @@ h11 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: none;
 }
 
 .gridlines77 {
-	background-color: #bed;
 	text-align: center;
   padding-top: 5px;
   padding-right: 15px;
@@ -374,4 +371,10 @@ h11 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: none;
 }
+
+.blur {filter: blur(4px);}
+
+.blur:hover {filter: none;}
+
