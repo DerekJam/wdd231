@@ -290,7 +290,7 @@ h11 {
   text-align: center;
   background: green;
   color: white;
-  font-size: 14px;  
+  font-size: 18px;  
   margin: 0.25rem;
   padding: 0.35rem;
   display: flex;
@@ -299,7 +299,7 @@ h11 {
   width: 60%;
   margin-left: 100px;
   border: none;
-}
+ }
 
 .gridlines5 {
 	text-align: center;
@@ -310,7 +310,7 @@ h11 {
   text-align: center;
   background: darkmagenta;
   color: white;
-  font-size: 14px;  
+  font-size: 18px;  
   margin: 0.25rem;
   padding: 0.35rem;
   display: flex;
@@ -327,10 +327,10 @@ h11 {
   padding-right: 15px;
   padding-bottom: 5px;
   padding-left: 15px;
-  text-align: right;
+  text-align: center;
   background: transparent;
   color: white;
-  font-size: 14px;  
+  font-size: 18px;  
   margin: 0.25rem;
   padding: 0.35rem;
   display: flex;
@@ -349,7 +349,7 @@ h11 {
   text-align: center;
   background: transparent;
   color: white;
-  font-size: 14px;  
+  font-size: 18px;  
   margin: 0.25rem;
   padding: 0.35rem;
   display: flex;
@@ -367,7 +367,7 @@ h11 {
   text-align: center;
   background: transparent;
   color: white;
-  font-size: 14px;  
+  font-size: 18px;  
   margin: 0.25rem;
   padding: 0.35rem;
   display: flex;
