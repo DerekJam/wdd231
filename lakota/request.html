@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Request info about the Lakota People">
+    <meta name="author" content="Derek Steele">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <meta property="og:site_name" content="Request info about the Lakota People">
+    <meta property="og:title" content="Request info about the Lakota People">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="request.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Request info about the Lakota People">
+    <meta name="twitter:image:alt" content="Alt text for X image">
+    <link rel="icon" type="image/x-icon" href="images/LP.ico">
+    <title>Request info about the Lakota People</title>
+
+
+
+
+<div id="header">
+    <button type="button" id="menu" button aria-label="open hamburger menu"></button>
+  <nav class="navigation">
+    <a href="index.html" title="Home">⌂</a>
+    <a href="redcloud.html" title="Red Cloud">Red Cloud</a>
+    <a href="spottedtail.html" title="Spotted Tail">Spotted Tail</a>
+    <a href="sittingbull.html" title="Sitting Bull">Sitting Bull</a>
+    <a href="request.html" title="Request More Info">Request</a>
+    <a href="siteplan.html" title="Site Plan">Site Plan</a>
+    </nav>
+</div>
+</head>
+
+<body>
+
+  <div class="grid">
+    <section class="gridlines3">
+      <h1>Request Info</h1>
+    </section>
+     </div>
+
+
+  <div class="grid">
+    <section class="gridlines1">
+     <h3><i>Complete the form to receive more info</i></h3><br>
+     <form action="thankyou.html" method="get" target="_blank" autocomplete="on">
+       <h4>First and Last Name</h4><br>
+       <label for="fname">First name:</label>
+       <input type="text" id="fname" name="fname" placeholder="First" required><br><br>
+       <label for="lname">Last name:</label>
+       <input type="text" id="lname" name="lname" placeholder="Last" required><br><br><br>
+       <h4>Contact Info</h4><br>
+       <label for="email">Email address:</label>
+       <input type="email" id="email" name="email" placeholder="username@address.com" required><br><br>
+       <label for="phone">Mobile phone number:</label>
+       <input type="phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required><br><br>
+       <br>
+
+       
+       <label for="level"><h4>Please select the individual you'd like more info about:</h4></label><br>
+       <input type="radio" id="level_np" name="level" value="NP">
+       <label for="level_np">Red Cloud</label><br><br>
+
+       
+       <input type="radio" id="level_bronze" name="level" value="Bronze">
+       <label for="level_bronze">Spotted Tail</label><br><br>
+       
+       <input type="radio" id="level_silver" name="level" value="Silver">
+       <label for="level_silver">Sitting Bull</label><br><br>
+       
+      
+
+       <input type="hidden" id="date" name="date"> <br><br>
+
+    
+
+       <input type="submit" value="Request">
+       <input type="reset" value="Reset">
+     </form>
+
+     
+     <br>
+
+     
+     
+     
+     <br>
+ 
+<br>
+    </section>
+    <section class="gridlines1">
+     <h3><i>Learn more about...</i></h3><br>
+
+     <!--NEW CODE FOR MODALS-->
+    
+ 
+     <script src="scripts/moreinfo.js"></script>
+     <div class="grid">
+       <section class="gridlines" style="background:#E24E1B">
+         <h4>Red Cloud</h4><br>
+         <button class="open-button" id="openButtonRC">
+           Learn more
+          </button>
+         <dialog class="modal" id="modalNP">
+         <button class="close-button" id="closeButtonRC">
+         X      </button>
+         <p>Non-Profit (NP)</p><p>This membership level is for non profit organizations and there is no fee </p>
+         </dialog><br>
+       </section>
+ 
+       <section class="gridlines" style="background:#E24E1B">
+         <h4>Spotted Tail</h4><br>
+ 
+         <button class="open-button" id="openButtonBr">
+           Learn more
+          </button>
+         <dialog class="modal" id="modalBr">
+         <button class="close-button" id="closeButtonBr">
+         X      </button>
+         <p>Welcome to Bronze!</p><p>This level...</p>
+         </dialog><br>
+       </section>
+ 
+       <section class="gridlines" style="background:#E24E1B">
+       <h4>Sitting Bull</h4><br>
+       <button class="open-button" id="openButtonSil">
+       Learn more
+        </button>
+       <dialog class="modal" id="modalSil">
+       <button class="close-button" id="closeButtonSil">
+       X      </button>
+       <p>Welcome to Silver!</p><p>This level...</p>
+       </dialog><br>
+       </section>
+ 
+ 
+    </section>
+  </div>
+
+
+
+</body>
+
+
+  <div id="footer">
+    <p id="demo">
+      <script>
+        const date = new Date(document.lastModified);
+        document.getElementById("demo").innerHTML = date;
+      </script> | 2024 Lakota People | © Derek J. Steele
+    </p>
+  </div>
+
+
+</html>
