@@ -14,42 +14,6 @@
   <meta name="twitter:image:alt" content="Alt text for image">
   <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/wdd231/chamber/data/favcham.ico">
   <title>Tempe Chamber of Commerce Directory</title>
-
-  <style>
-   @media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-
-@media (min-width: 37.5em) {
-  h1 {
-    font-size: 2.5rem;
-    margin-left: 0;
-    text-align: center;
-  }
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  #menu {
-    display: none;
-  }
-  .navigation {
-    flex-direction: row;
-  }
-  .navigation a {
-    display: block;
-    flex: 1 1 100%;
-  }
-  .mainbox {
-    margin: 1rem auto;
-  }
-}
-  </style>
 </head>
 
 <body translate="no">
@@ -66,63 +30,16 @@
     <a href="directory.html" title="Chamber Directory">Directory</a>
     <a href="join.html" title="Join">Join</a>
     <a href="discover.html" title="Discover">Discover</a>
-
   </nav>
 
   
 
   <main>
 
-    <div class="grid">
-      <section class="gridlines">
-        <p id='company-name'>Waiting for data</p>
-          <p id='user-phone'>Waiting for data</p>
-          <p id='user-website'>Waiting for data</p>
-          <p id='user-contact'>Waiting for data</p>
-          <script>
-            fetch('scripts/members.json')
-              .then(response => response.json())
-              .then(data => {
-                const company = data.companies[0];
+      <section class="gridlines" id="company-list">
 
-                if (company) {
-                document.querySelector('#company-name').textContent = company.name
-                document.querySelector('#user-phone').textContent = company.phone
-                document.querySelector('#user-website').textContent = company.website
-                document.querySelector('#user-contact').textContent = company.contact
-              } else {
-                console.error('Not Found');
-              }
-              });
-          </script>
-      </section>
-
-      <section class="gridlines">
-        
-      </section>
-
-      <section class="gridlines">
-       
-      </section>
-
-    </div>
-    <div class="grid">
-       <section class="gridlines">
-
-       </section>
-      <section class="gridlines">
-        
-      </section>
-
-       <section class="gridlines">
-                
-       </section>
-
-</div>
-
-
-
- 
+          </section>
+         
   </main>
 
   <br><br><br>
@@ -135,6 +52,8 @@
       </script> | ©2024 Tempe, AZ Chamber of Commerce | WDD231 Class Project | Derek J. Steele
     </p>
   </div>
+
+  <script src="scripts/mmbrsrun.js"></script>
 
 </body>
 </html>
