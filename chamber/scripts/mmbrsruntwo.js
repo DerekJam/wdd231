@@ -4,8 +4,11 @@ fetch('scripts/members.json')
   .then(response => response.json())
   .then(data => {
     const companyListSection = document.getElementById('company-list');
+    const desiredStatuses = ["Gold", "Silver"];
+
 
       data.companies.forEach((company, index) => {
+        if (desiredStatuses.includes(company.status)) {
         const companySection = document.createElement('section');
         companySection.classList.add('gridlines5');
 
@@ -19,7 +22,7 @@ fetch('scripts/members.json')
 `;
 
 companyListSection.appendChild(companySection);
+        }
       });
       })
       .catch(error => console.error('Error loading member data:', error));
-   

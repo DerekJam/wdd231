@@ -14,7 +14,7 @@ body {
 section {
   margin: 0.25rem;
   padding: 0.35rem;
-  background-color: #eee;
+  background-color: lightskyblue;
   border: 1px solid #bbb;
   display: flex;
   flex-direction: column;
