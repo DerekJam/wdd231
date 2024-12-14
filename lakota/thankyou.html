@@ -52,7 +52,7 @@
     <h6>Your last name: <span id="lname"></span></h6>
     <h6>Your email address: <span id="email"></span></h6>
     <h6>Your mobile phone number: <span id="phone"></span></h6>
-    <h6>Your membership level: <span id="level"></span></h6><br><br>
+    <h6>Individual selected: <span id="individual"></span></h6><br><br>
     <h6>Date application submitted: <span id="date"></span></h6><br>
   
     <script>
@@ -66,7 +66,7 @@
       document.getElementById("lname").textContent = getURLParameter("lname");
       document.getElementById("email").textContent = getURLParameter("email");
       document.getElementById("phone").textContent = getURLParameter("phone");
-      document.getElementById("level").textContent = getURLParameter("level");
+      document.getElementById("individual").textContent = getURLParameter("individual");
   
       const d = new Date();
       document.getElementById("date").innerHTML = d;

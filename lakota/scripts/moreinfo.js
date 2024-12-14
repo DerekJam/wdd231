@@ -51,51 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const dialog3 = document.querySelector("#dialog3");
-  const openButton3 = document.querySelector("#openButton3"); 
-  const closeButton3 = document.querySelector("#closeButton3"); 
-
-
-  openButton3.addEventListener("click", () => {
-    dialog3.showModal();
-  });
-
-  closeButton3.addEventListener("click", () => {
-    dialog3.close();
-  });
-});
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const dialog4 = document.querySelector("#dialog4");
-  const openButton4 = document.querySelector("#openButton4"); 
-  const closeButton4 = document.querySelector("#closeButton4"); 
 
-
-  openButton4.addEventListener("click", () => {
-    dialog4.showModal();
-  });
-
-  closeButton4.addEventListener("click", () => {
-    dialog4.close();
-  });
-});
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const dialog5 = document.querySelector("#dialog5");
-  const openButton5 = document.querySelector("#openButton5"); 
-  const closeButton5 = document.querySelector("#closeButton5"); 
-
-
-  openButton5.addEventListener("click", () => {
-    dialog5.showModal();
-  });
-
-  closeButton5.addEventListener("click", () => {
-    dialog5.close();
-  });
-});
