@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: darkblue;
 }
+
 
 
 #header {
@@ -30,10 +32,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.grid3 {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
+
 
 section {
   margin: 0.25rem;
@@ -114,4 +113,150 @@ dialog button {
 
 .picture1:hover {
 	opacity: 1;
+}
+
+
+
+
+
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+}
+ul li:hover {
+  background: lightskyblue;
+}
+ul li:hover ul {
+  display: block;
+}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: left;
+  font-family: times, serif;
+  font-size: 1.5rem;
+  margin-left: 0rem;
+  color: white;
+}
+h2 {
+  font-size: 1.2rem;
+  color: navy;
+  text-align: left;
+  margin: 1rem;
+}
+h3 {
+  font-size: 1.2rem;
+  color: white;
+  text-align: left;
+  margin: 1rem;
+}
+h4 {
+  font-size: .9rem;
+  color: white;
+  text-align: left;
+  margin: 1rem;
+}
+nav {
+  max-width: 100%;
+  margin: 1rem auto;
+}
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+#menu::before {
+  content: "☰";
+}
+#menu.open::before {
+  content: "❎";
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #333;
+  color: #fff;
+}
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.navigation a:hover {
+  background-color: #00fffb;
+  color: #333;
+  font-weight: 700;
+}
+.open a {
+  display: block;
+}
+
+@media (min-width: 37.5em) {
+  h1 {
+    font-size: 2.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #menu {
+    display: none;
+  }
+  .navigation {
+    flex-direction: row;
+  }
+  .navigation a {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .mainbox {
+    margin: 1rem auto;
+  }
 }
