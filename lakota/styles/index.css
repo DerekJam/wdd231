@@ -224,3 +224,22 @@
         color: black;
         font-style: italic;
       }
+
+
+
+
+
+      #company-list {
+        display: grid;
+        box-sizing: border-box;
+      }
+
+
+      .gridlines4 {
+        background-color: #DB995A;
+        text-align: left;
+        font-size: 16px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        }
