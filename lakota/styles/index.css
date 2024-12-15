@@ -231,15 +231,14 @@
 
       #company-list {
         display: grid;
-        box-sizing: border-box;
-      }
-
-
-      .gridlines4 {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 20px;
         background-color: #DB995A;
-        text-align: left;
-        font-size: 16px;
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
-        display: grid;
-        }
+      }
+      
+      .gridlines4 {
+        border: 1px solid #DB995A;
+        padding: 10px;
+        background-color: #E24E1B;
+      }

@@ -10,7 +10,6 @@ fetch('scripts/leaders.json')
         companySection.classList.add('gridlines4');
 
         companySection.innerHTML = `
-          <img src="images/tcclogo2.png" alt="TCC logo" width="30" height="20"></img><br>
 <p><b>${company.name}</b></p>
 <p>Phone: ${company.phone}</p>
 <p>Website: <a href="${company.website}" target="_blank">${company.website}</a></p>
