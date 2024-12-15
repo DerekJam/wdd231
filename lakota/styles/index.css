@@ -242,3 +242,12 @@
         padding: 10px;
         background-color: #E24E1B;
       }
+
+
+      .gridlines4 a:link {
+        color: black;
+      }
+
+     .gridlines4 a:visited {
+        color: black;
+      }

@@ -13,7 +13,7 @@ fetch('scripts/leaders.json')
 <p><b>${company.name}</b></p>
 <p>Birth: ${company.birth}</p>
 <p>Death: ${company.death}</p>
-<p><a href="${company.info}" target="_blank">${company.info}</a></p>
+<p><a href="${company.info}" target="_blank">Website</a></p>
 <p>Lifespan: <b>${company.lifespan}</b></p>
 `;
 
