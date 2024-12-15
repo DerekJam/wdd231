@@ -11,10 +11,10 @@ fetch('scripts/leaders.json')
 
         companySection.innerHTML = `
 <p><b>${company.name}</b></p>
-<p>Phone: ${company.phone}</p>
-<p>Website: <a href="${company.website}" target="_blank">${company.website}</a></p>
-<p>Contact: ${company.contact}</p>
-<p>Status: <b>${company.status}</b></p>
+<p>Birth: ${company.birth}</p>
+<p>Death: ${company.death}</p>
+<p><a href="${company.info}" target="_blank">${company.info}</a></p>
+<p>Lifespan: <b>${company.lifespan}</b></p>
 `;
 
 companyListSection.appendChild(companySection);
