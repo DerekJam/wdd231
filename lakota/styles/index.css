@@ -196,7 +196,11 @@
         }
 
 
-
+        h5 {
+          font-size: 1rem;
+          text-align: center;
+          font-weight: normal;
+        }
 
 
 
@@ -208,4 +212,15 @@
 
       a:visited {
         color: white;
+      }
+
+
+      h5 a:link {
+        color: black;
+        font-style: italic;
+      }
+
+      h5 a:visited {
+        color: black;
+        font-style: italic;
       }
