@@ -261,7 +261,7 @@ dialog button {
   
           h3 {
             font-size: 1em;
-            text-align: center;
+            text-align: left;
             font-style: italic;
             border: 10px solid transparent;
           }
