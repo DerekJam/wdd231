@@ -7,13 +7,14 @@ fetch('scripts/leaders.json')
 
       data.companies.forEach((company, index) => {
         const companySection = document.createElement('section');
-        companySection.classList.add('gridlines4');
+        companySection.classList.add('gridlines5');
 
         companySection.innerHTML = `
+          <img src="images/tcclogo2.png" alt="TCC logo" width="30" height="20"></img><br>
 <p><b>${company.name}</b></p>
-<p>Contact: ${company.contact}</p>
 <p>Phone: ${company.phone}</p>
-<p><a href="${company.website}" target="_blank">Website</a></p>
+<p>Website: <a href="${company.website}" target="_blank">${company.website}</a></p>
+<p>Contact: ${company.contact}</p>
 <p>Level: <b>${company.level}</b></p>
 `;
 

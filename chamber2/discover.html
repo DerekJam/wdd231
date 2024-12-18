@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover the Tempe Chamber of Commerce">
+    <meta name="author" content="Derek Steele">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/discover.css">
+    <meta property="og:site_name" content="Discover the Tempe Chamber">
+    <meta property="og:title" content="Discover the Tempe Chamber">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Discover the Tempe Chamber">
+    <meta name="twitter:image:alt" content="Alt text for X image">
+    <link rel="icon" type="image/x-icon" href="images/favcham.ico">
+    <title>Discover the TCC</title>
+</head>
+
+ 
+<div id="header">
+    <button type="button" id="menu" aria-label="open hamburger menu"></button>
+  <nav class="navigation">
+    <a href="index.html" title="Home">Home</a>
+    <a href="directory.html" title="Directory">Directory</a>
+    <a href="join.html" title="Join">Join</a>
+    <a href="discover.html" title="Discover"><h4>Discover</h4></a>
+    </nav>
+</div>
+
+
+
+
+  <div class="grid">
+    <section class="gridlines3">
+      <h2>Discover the Tempe, AZ Chamber of Commerce</h2>
+    </section>
+     </div>
+
+
+     <div class="grid">
+        <section class="gridlines1">
+          <h4>Howdy and ...</h4>
+                                        <div>
+                                          <script>
+                                            var days = 730; 
+                                            var lastvisit=new Object();
+                                            var firstvisitmsg="<p style='font-size:18px; color:black; align:center'>Welcome to the Discover page for the Tempe, AZ Chamber of Commerce for the first time!</p> <p style='font-size:18px; color:black; align:center'>Enjoy!</p>"; 
+                                            lastvisit.subsequentvisitmsg="<p style='font-size:18px; color:black'>Welcome back!</p> <p style='font-size:18px; color:black'>You last visited the <em>Discover the Tempe, AZ Chamber of Commerce</em> page on</p> <p style='font-size:18px; color:black;'>[date_displayed]</p>";
+                                            
+                                            lastvisit.getCookie=function(Name){ 
+                                            var re=new RegExp(Name+"=[^;]+", "i"); 
+                                            if (document.cookie.match(re)) 
+                                            return document.cookie.match(re)[0].split("=")[1];
+                                            return''; 
+                                            }
+                                            
+                                            lastvisit.setCookie=function(name, value, days){ 
+                                            var expireDate = new Date();
+                                            
+                                            var expstring=expireDate.setDate(expireDate.getDate()+parseInt(days));
+                                            document.cookie = name+"="+value+"; expires="+expireDate.toGMTString()+"; path=/";
+                                            }
+                                            
+                                            lastvisit.showmessage = function() {
+                                            var wh = new Date();
+                                            if (lastvisit.getCookie("visit_record") == "") { 
+                                            lastvisit.setCookie("visit_record", wh, days); 
+                                            document.write(firstvisitmsg);
+                                            }
+                                            
+                                            else {
+                                            var lv = lastvisit.getCookie("visit_record");
+                                            var lvp = Date.parse(lv);
+                                            var now = new Date();
+                                            now.setTime(lvp);
+                                            var day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                            var month = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                            var dd = now.getDate();
+                                            var dy = now.getDay();
+                                            dy = day[dy];
+                                            var mn = now.getMonth();
+                                            mn = month[mn];
+                                            yy = now.getFullYear();
+                                            var hh = now.getHours();
+                                            var ampm = "AM";
+                                            if (hh >= 12) {ampm = "PM"}
+                                            if (hh >12){hh = hh - 12};
+                                            if (hh == 0) {hh = 12}
+                                            if (hh < 10) {hh = "0" + hh};
+                                            var mins = now.getMinutes();
+                                            if (mins < 10) {mins = "0"+ mins}
+                                            var secs = now.getSeconds();
+                                            if (secs < 10) {secs = "0" + secs}
+                                            var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
+                                            document.write(lastvisit.subsequentvisitmsg.replace("\[date_displayed\]", dispDate))
+                                            }
+                                            
+                                            lastvisit.setCookie("visit_record", wh, days);
+                                            
+                                            }
+                                            
+                                            lastvisit.showmessage();
+                                            </script>
+                                            
+                                        </div>
+      
+        </section>
+      </div>
+
+  <div class="grid">
+    <section class="gridlines1">
+        <section class="gridlines1">
+            <h3>Events</h3><br>
+            <ul>
+              <li><a href="https://tempehealingfield.org/">Remember 9/11</a></li><br>
+              <li><a href="https://tempepubliclibrary.libnet.info/event/9867993">FanCon</a></li><br>
+              <li><a href="https://www.downtowntempe.com/events/boat-parade">Boat Parade</a></li><br>
+              <li><a href="https://www.azalohafest.org/">Aloha Festival</a></li><br>
+              <li><a href="https://sundevils.com/sports/mens/football">ASU Football</a></li>
+            </ul>
+           </section><br><br><br><br>
+
+           <section class="gridlines1">
+            <h3>Attractions</h3><br>
+            <ul>
+              <li><a href="https://www.tripadvisor.com/Attraction_Review-g31377-d271168-Reviews-Arizona_Mills-Tempe_Arizona.html">AZ Mills Mall</a></li><br>
+              <li><a href="https://tempe.polarislibrary.com/polaris/">Public Library</a></li><br>
+              <li><a href="https://www.tempetourism.com/things-to-do/tempe-town-lake/">Town Lake</a></li><br>
+              <li><a href="https://tours.asu.edu/tempe/a-mountain">"A" Mountain</a></li><br>
+               <li><a href="https://mauihawaiiangrill.kwickmenu.com/">Maui Grill</a></li><br>
+               <li><a href="https://www.tempetourism.com/things-to-do/kiwanis-park/">Kiwanis Park</a></li><br>
+               <li><a href="https://www.tripadvisor.com/Attraction_Review-g31377-d27050318-Reviews-Selleh_Park-Tempe_Arizona.html">Selleh Park</a></li><br>
+               <li><a href="https://dbg.org/">Botanical Garden</a></li><br>
+               <li><a href="https://www.downtowntempe.com/go/tempe-center-for-the-arts">Arts Center</a></li><br>
+               <li><a href="https://www.phoenixzoo.org/">Phoenix Zoo</a></li><br>
+               <li><a href="https://tempehistory.org/museum/">History Museum</a></li><br>
+               <li><a href="https://arizonahistoricalsociety.org/facility/arizona-heritage-center/">Heritage Center</a></li><br>
+               <li><a href="https://hallofflame.org/">Hall of Flame</a></li><br>
+               <li><a href="https://www.tempetourism.com/things-to-do/papago-park/">Papago Park</a></li><br>
+               <li><a href="https://thechuckbox.com/">Chuckbox</a></li><br>
+               <li><a href="https://www.asugammage.com/">Gammage</a></li>
+            </ul>
+            
+     </section>
+
+
+
+</section>
+
+    <section class="gridlines1">
+
+        <h3>Images of Tempe, Arizona
+        </h3><br>
+       <section class="h1"><img src="images/1a.webp" loading="lazy" alt="lightRail" class="blur" height="150"><h6>Ride the light rail</h6></section>
+       <br>
+  
+      <section class="h1"><img src="images/2a.webp" loading="lazy" alt="fireworks" class="blur" height="150"><h6>Come see fireworks at Sun Devil Stadium</h6></section>
+      <br>
+  
+     <section class="h1"><img src="images/3a.webp" loading="lazy" alt="haydenlibrary" class="blur" height="150"><h6>Check out the Hayden library</h6></section>
+     <br>
+  
+    <section class="h1"><img src="images/4a.webp" loading="lazy" alt="downtown" class="blur" height="150"><h6>Explore the scenes in downtown</h6></section>
+    <br> 
+  
+   <section class="h1"><img src="images/5a.webp" loading="lazy" alt="mountains" class="blur" height="150"><h6>Go hiking in nearby mountains</h6></section>
+   <br>
+  
+  <section class="h1"><img src="images/6a.webp" loading="lazy" alt="DobbinsLookoutinPhoenix" class="blur" height="150"><h6>Visit Dobbins lookout in Phoenix</h6></section>
+  <br>
+  
+  <section class="h1"><img src="images/7a.webp" loading="lazy" alt="TempeTownLakeatnight" class="blur" height="150"><h6>See the beautiful Tempe Town Lake at night</h6></section>
+  <br>
+  
+  <section class="h1"><img src="images/8a.webp" loading="lazy" alt="viewfromAmountain" class="blur" height="150"><h6>Climb to the top of "A" mountain</h6></section>
+  <br>
+        
+    </section>
+
+
+  </div>
+
+  <div class="grid">
+
+
+
+     
+
+
+
+
+  
+  
+      </div>
+
+
+
+
+
+
+     <div id="footer">
+      <p id="demo">
+        <script>
+          const date = new Date(document.lastModified);
+          document.getElementById("demo").innerHTML = date;
+        </script> | ©2024 Tempe, AZ Chamber of Commerce | WDD231 Class Project | Derek J. Steele
+      </p>
+    </div>
+
+
+
+</body>
+
+
+
+
+
+</html>
