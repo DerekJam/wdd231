@@ -1,5 +1,4 @@
 
-
 #content {
     margin-top: 60px;
 }
@@ -23,24 +22,9 @@
     font-size: 14px;
     font-family: 'Raleway'; 
   }
-  .col-container {
-    display: table;
-    width: 100%;
-  }
-  .col {
-    display: table-cell;
-    padding: 16px;
-  }
-  .col-container2 {
-    display: table;
-    width: 100%;
-  }
-  .col2 {
-    display: table-cell;
-    padding: 16px;
-  }
+  
   body {
-    background-color: darkblue;
+    background-color: skyblue;
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -91,15 +75,7 @@
 
  
   @media (min-width: 37.5em) {
-    h1 {
-      font-size: 2.5rem;
-      margin-left: 0;
-      text-align: center;
-    }
-    h2 {
-      font-size: 2rem;
-      text-align: center;
-    }
+    
     #menu {
       display: none;
     }
@@ -116,10 +92,6 @@
   }
 
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
 
 
 
@@ -132,48 +104,6 @@
 
 
 
-
-
-
-dialog {
-	margin: 10% auto;
-	width: 100%;
-	max-width: 350px;
-	background-color: #fff;
-	padding: 25px;
-	border: 0;
-	border-radius: 0px;
-  animation-name: animated;
-  animation-duration: 4s;
-  }
-  
-dialog button {
-	position: center;
-	top: 400px;
-	right: 200px;
-
-}
-
-@keyframes animated {
-  50%  {background-color: lightseagreen;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.blur {filter: blur(4px);}
-
-.blur:hover {filter: none;}
 
 
 
@@ -201,67 +131,35 @@ dialog button {
 
 
    
-    body {
-      background-color: darkblue;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-   
-   
 
-   
-    .gridlines {
-        background-color: skyblue;
-        border: 10px solid transparent;
-      }
- 
+  h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    font-style: normal;
+    border: 10px solid transparent;
+  }
 
-    
-    .gridlines1 {
-        background-color: greenyellow;
-        font-size: 16px;
-        text-align: left;
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
-         }
-    
-
-      .gridlines3 {
-      background-color: greenyellow;
-      text-align: center;
-      font-size: 40px;
-      color: black;
-      font-family: Arial, Helvetica, sans-serif;
-      }
 
      
       
 
 
-
-        section {
-          border: 20px solid transparent;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-     
-
-
-        h4 {
-            font-size: 1em;
-            text-align: center;
-            font-style: italic;
-          }
-  
           h3 {
             font-size: 1em;
             text-align: center;
             font-style: italic;
             border: 10px solid transparent;
           }
+
+          h4 {
+            text-align: left;
+            color: black;
+            font-family: sans-serif;
+            font-size: 1rem;
+            margin: 0.25rem;
+            padding: 1.35rem;
+          }
+        
+          
+        

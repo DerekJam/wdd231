@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thanks for joining the TCC">
+    <meta name="author" content="Derek Steele">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <meta property="og:site_name" content="Thanks for joining the TCC">
+    <meta property="og:title" content="Thanks for joining the TCC">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Thanks for joining the TCC">
+    <meta name="twitter:image:alt" content="Alt text for X image">
+    <link rel="icon" type="image/x-icon" href="images/favcham.ico">
+    <title>Thanks for joining the TCC</title>
+</head>
+
+ 
+<div id="header">
+    <button type="button" id="menu" aria-label="open hamburger menu"></button>
+  <nav class="navigation">
+    <a href="index.html" title="Home">Home</a>
+    <a href="directory.html" title="Directory">Directory</a>
+    <a href="join.html" title="Join">Join</a>
+    <a href="discover.html" title="Discover">Discover</a>
+    </nav>
+</div>
+
+
+<body><br>
+    <h2>Thank you for joining the Tempe, Arizona Chamber of Commerce</h2>
+    <h4>Your first name: <span id="fname"></span></h4>
+    <h4>Your last name: <span id="lname"></span></h4>
+    <h4>Your organizational title: <span id="title"></span></h4>
+    <h4>Your email address: <span id="email"></span></h4>
+    <h4>Your mobile phone number: <span id="phone"></span></h4>
+    <h4>Your business/organization's name: <span id="bname"></span></h4>
+    <h4>Your business/organization's info: <span id="binfo"></span></h4>
+    <h4>Your membership level: <span id="level"></span></h4>
+    <h4>Date application submitted: <span id="date"></span></h4>
+  
+    <script>
+  
+      function getURLParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+      }
+  
+      document.getElementById("fname").textContent = getURLParameter("fname");
+      document.getElementById("lname").textContent = getURLParameter("lname");
+      document.getElementById("email").textContent = getURLParameter("email");
+      document.getElementById("phone").textContent = getURLParameter("phone");
+      document.getElementById("bname").textContent = getURLParameter("bname");
+      document.getElementById("binfo").textContent = getURLParameter("binfo");
+      document.getElementById("level").textContent = getURLParameter("level");
+  
+      const d = new Date();
+      document.getElementById("date").innerHTML = d;
+  
+  
+  
+    </script>
+  
+  
+  
+
+
+
+
+
+<br><br>
+
+     <div id="footer">
+      <p id="demo">
+        <script>
+          const date = new Date(document.lastModified);
+          document.getElementById("demo").innerHTML = date;
+        </script> | ©2024 Tempe, AZ Chamber of Commerce | WDD231 Class Project | Derek J. Steele
+      </p>
+    </div>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
