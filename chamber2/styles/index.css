@@ -10,8 +10,7 @@
   padding-bottom: 5px;
   padding-left: 15px;
   text-align: center;
-  background: #5C4033;
-  color: white;
+   color: white;
   font-size: 14px;
   font-family: 'Raleway'; 
   bottom: 0;
@@ -20,7 +19,7 @@
   flex-direction: column;
   list-style: none;
   background-color: darkblue;
-  color: #fff;
+
 }
 
 
@@ -273,3 +272,11 @@
 .gridlines1 a:visited {
     color: black;
 }
+
+.gridlines5 a:link {
+    color: black;
+  }
+
+ .gridlines5 a:visited {
+    color: black;
+  }
