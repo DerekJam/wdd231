@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to the Tempe Chamber of Commerce">
+    <meta name="author" content="Derek Steele">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <meta property="og:site_name" content="Tempe Chamber">
+    <meta property="og:title" content="Tempe Chamber">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Tempe Chamber">
+    <meta name="twitter:image:alt" content="Alt text for X image">
+    <link rel="icon" type="image/x-icon" href="images/favcham.ico">
+    <title>Tempe, Arizona Chamber of Commerce</title>
+</head>
+
+
+<div id="header">
+    <button type="button" id="menu" aria-label="open hamburger menu"></button>
+  <nav class="navigation">
+    <a href="index.html" title="Home"><h4>Home</h4></a>
+    <a href="directory.html" title="Directory">Directory</a>
+    <a href="spottedtail.html" title="Join">Join</a>
+    <a href="sittingbull.html" title="Discover">Discover</a>
+    </nav>
+</div>
+
+
+
+
+ 
+
+<div class="grid">
+    <section class="gridlines2">
+              <h2>Complete the form to join</h2>
+            <form action="thankyou.html" method="get" target="_blank" autocomplete="on">
+              <h3>First and Last Name</h3><br>
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname" placeholder="First" required><br><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname" placeholder="Last" required><br><br><br>
+              <h3>Organizational Title</h3><br>
+              <label for="title">Title:</label>
+              <input type="text" id="title" name="title" placeholder="Title"><br><br><br>
+              <h3>Contact Info</h3><br>
+              <label for="email">Email address:</label>
+              <input type="email" id="email" name="email" placeholder="username@address.com" required><br><br>
+              <label for="phone">Mobile phone number:</label>
+              <input type="phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required><br><br>
+              <br>
+              <h3>Business Info</h3><br>
+              <label for="bname">Business/organization's name:</label>
+              <input type="text" id="info" name="bname" placeholder="Org name" required><br><br>
+              <label for="binfo">Business/organization's info:</label>
+              <input type="text" id="binfo" name="binfo" placeholder="Org info"><br><br>
+  
+              <label for="level">Please select your membership level:</label><br><br>
+              <input type="radio" id="level_np" name="level" value="NP">
+              <label for="level_np">NP (non-profit)</label><br><br>
+  
+              
+              <input type="radio" id="level_bronze" name="level" value="Bronze">
+              <label for="level_bronze">Bronze</label><br><br>
+              
+              <input type="radio" id="level_silver" name="level" value="Silver">
+              <label for="level_silver">Silver</label><br><br>
+              
+              <input type="radio" id="level_gold" name="level" value="Gold">
+              <label for="level_gold">Gold</label><br>
+             
+              
+             
+  
+              <input type="hidden" id="date" name="date"> <br><br>
+      
+           
+  
+  
+              <input type="submit" value="Join">
+              <input type="reset" value="Reset">
+            </form>
+       
+            
+            <br>
+    </section>
+  
+    <section class="gridlines3" style="background:rgb(109, 235, 136)">
+      <h2>Membership Level Info</h2>
+  
+     
+     
+  
+      <script src="scripts/join.js"></script>
+      <div class="grid">
+        <section class="gridlines" style="background: #bed">
+          <h11>Non-Profit (NP)</h11>
+          <button class="open-button" id="openButton">
+            Learn more
+           </button>
+          <dialog id="dialog">
+          <button class="close-button" id="closeButton">
+          X      </button>
+          <p>Non-Profit (NP)</p><p>This membership level is for non-profit organizations and there is no fee </p>
+          </dialog><br>
+        </section>
+  
+        <section class="gridlines" style="background: #bed">
+          <h11>Bronze</h11>
+  
+          <button class="open-button2" id="openButton2">
+            Learn more
+           </button>
+          <dialog id="dialog2">
+          <button class="close-button2" id="closeButton2">
+          X      </button>
+          <p>Welcome to Bronze!</p><p>This level provides basic membership benefits.</p>
+          </dialog><br>
+        </section>
+  
+        <section class="gridlines" style="background: #bed">
+        <h11>Silver</h11>
+        <button class="open-button3" id="openButton3">
+        Learn more
+         </button>
+        <dialog id="dialog3">
+        <button class="close-button3" id="closeButton3">
+        X      </button>
+        <p>Welcome to Silver!</p><p>This level provides limited access to special events, etc.</p>
+        </dialog><br>
+        </section>
+  
+        <section class="gridlines" style="background: #bed">
+        <h11>Gold</h11>
+        <button class="open-button4" id="openButton4">
+        Learn more       
+        </button>
+        <dialog id="dialog4">
+        <button class="close-button4" id="closeButton4">
+        X      </button>
+        <p>Welcome to Gold!</p><p>This level provides all benefits!</p>
+        </dialog><br>
+        </section>
+  
+  
+  
+  
+  
+  
+  
+  </section>
+  
+   
+  
+  
+  
+     </div>
+  
+  
+    </section>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  
+   
+  
+  
+  
+    <br><br><br>
+  
+    <div id="footer">
+      <p id="demo">
+        <script>
+          const date = new Date(document.lastModified);
+          document.getElementById("demo").innerHTML = date;
+        </script> | ©2024 Tempe, AZ Chamber of Commerce | WDD231 Class Project | Derek J. Steele
+      </p>
+    </div>
+  
+  </body>
+  </html>
+  

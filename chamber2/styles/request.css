@@ -1,0 +1,256 @@
+
+
+
+
+#content {
+    margin-top: 60px;
+}
+
+
+
+#footer {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  text-align: center;
+  background: #5C4033;
+  color: white;
+  font-size: 14px;
+  font-family: 'Raleway'; 
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #5C4033;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    .headerdiv {
+      padding-top: 5px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      text-align: center;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+      font-family: 'Raleway'; 
+    }
+    .col-container {
+      display: table;
+      width: 100%;
+    }
+    .col {
+      display: table-cell;
+      padding: 16px;
+    }
+    .col-container2 {
+      display: table;
+      width: 100%;
+    }
+    .col2 {
+      display: table-cell;
+      padding: 16px;
+    }
+    body {
+      background-color: #E24E1B;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   
+   
+    #menu {
+      font-size: 1.5rem;
+      border: 0;
+      background: none;
+      color: #000;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    #menu::before {
+      content: "☰";
+    }
+    #menu.open::before {
+      content: "❎";
+    }
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background-color: #5C4033;
+      color: #fff;
+    }
+    .navigation a {
+      display: none;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    .navigation a:hover {
+      background-color: #D6D4A0;
+      color: #333;
+      font-weight: 700;
+    }
+    .open a {
+      display: block;
+    }
+   
+    @media (min-width: 37.5em) {
+      h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      #menu {
+        display: none;
+      }
+      .navigation {
+        flex-direction: row;
+      }
+      .navigation a {
+        display: block;
+        flex: 1 1 100%;
+      }
+      .mainbox {
+        margin: 1rem auto;
+      }
+    }
+
+    .picture1 {
+      opacity: 0;
+      transition: opacity 230ms;
+    }
+
+    .picture1:hover {
+      opacity: 1;
+    }
+
+
+    
+    .gridlines1 {
+      background-color: #DB995A;
+      text-align: left;
+      font-size: 20px;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+    
+      .gridlines3 {
+      background-color: #DB995A;
+      text-align: center;
+      font-size: 40px;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+
+     
+      
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+
+
+
+
+        section {
+          margin: 0.25rem;
+          padding: 0.35rem;
+          border: 20px solid #DB995A;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+     
+
+        h4 {
+          font-size: 1rem;
+          text-align: center;
+          font-style: italic;
+        }
+
+
+
+
+
+
+dialog {
+	margin: 10% auto;
+	width: 100%;
+	max-width: 350px;
+	background-color: #fff;
+	padding: 25px;
+	border: 0;
+	border-radius: 0px;
+  animation-name: animated;
+  animation-duration: 4s;
+  }
+  
+dialog button {
+	position: center;
+	top: 400px;
+	right: 200px;
+
+}
+
+@keyframes animated {
+  50%  {background-color: lightcoral;}
+}
+
+
+
+input[type=text] {
+  width: 100%;
+  padding: 8px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 8px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 8px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

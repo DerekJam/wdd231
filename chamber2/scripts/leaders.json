@@ -1,0 +1,61 @@
+{
+    "companies":
+              [
+                {
+                    "name": "Tempe Public Library",
+                    "contact": "Call us for more info",
+                    "phone": "480-350-5500",
+                    "website": "https://tempepubliclibrary.org",
+                    "status": "Gold"
+                },
+                {
+                    "name": "Maui Hawaiian Grill",
+                    "contact": "Call us for more info",
+                    "phone": "480-839-0375",
+                    "website": "https://mauihawaiiangrill.kwickmenu.com/",
+                    "status": "Gold"
+                },
+                {
+                    "name": "Tempe Town Lake",
+                    "contact": "Call us for more info",
+                    "phone": "480-350-4311",
+                    "website": "https://www.tempetourism.com/things-to-do/tempe-town-lake/",
+                    "status": "Silver"
+                },
+                {
+                    "name": "Arizona Mills Mall",
+                    "contact": "Call us for more info",
+                    "phone": "317-636-1600",
+                    "website": "https://www.simon.com/mall/arizona-mills",
+                    "status": "Member"
+                },
+                {
+                    "name": "Arizona State University",
+                    "contact": "customerservice@asu.edu",
+                    "phone": "855-278-5080",
+                    "website": "https://asu.edu",
+                    "status": "Silver"
+                },
+                {
+                    "name": "Tempe History Museum",
+                    "contact": "info@tempehistory.org",
+                    "phone": "480-350-5100",
+                    "website": "https://tempehistory.org/museum/",
+                    "status": "Member"
+                },
+                {
+                    "name": "Tempe Heritage Center",
+                    "contact": "Call us for more info",
+                    "phone": "480-929-0292",
+                    "website": "https://arizonahistoricalsociety.org/facility/arizona-heritage-center/",
+                    "status": "Gold"
+                },
+                {
+                    "name": "Chuckbox",
+                    "contact": "Call us for more info",
+                    "phone": "480-968.4712",
+                    "website": "https://thechuckbox.com/",
+                    "status": "Member"
+                }
+              ]
+}

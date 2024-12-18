@@ -1,0 +1,253 @@
+
+
+#content {
+    margin-top: 60px;
+}
+
+#footer {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  text-align: center;
+  background: #5C4033;
+  color: white;
+  font-size: 14px;
+  font-family: 'Raleway'; 
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: darkblue;
+  color: #fff;
+}
+
+
+   
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    .headerdiv {
+      padding-top: 5px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      text-align: center;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+      font-family: 'Raleway'; 
+    }
+    .col-container {
+      display: table;
+      width: 100%;
+    }
+    .col {
+      display: table-cell;
+      padding: 16px;
+    }
+    .col-container2 {
+      display: table;
+      width: 100%;
+    }
+    .col2 {
+      display: table-cell;
+      padding: 16px;
+    }
+    body {
+      background-color: darkblue;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   
+   
+    #menu {
+      font-size: 1.5rem;
+      border: 0;
+      background: none;
+      color: #000;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    #menu::before {
+      content: "☰";
+    }
+    #menu.open::before {
+      content: "❎";
+    }
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background-color: darkblue;
+      color: #fff;
+    }
+    .navigation a {
+      display: none;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    .navigation a:hover {
+      background-color: skyblue;
+      color: #333;
+      font-weight: 700;
+    }
+    .open a {
+      display: block;
+    }
+
+   
+    @media (min-width: 37.5em) {
+      h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      #menu {
+        display: none;
+      }
+      .navigation {
+        flex-direction: row;
+      }
+      .navigation a {
+        display: block;
+        flex: 1 1 100%;
+      }
+      .mainbox {
+        margin: 1rem auto;
+      }
+    }
+
+    .picture1 {
+      opacity: 0;
+      transition: opacity 230ms;
+    }
+
+    .picture1:hover {
+      opacity: 1;
+    }
+
+
+    
+    .gridlines1 {
+      background-color: greenyellow;
+      text-align: center;
+      font-size: 16px;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+         }
+    
+      .gridlines3 {
+      background-color: greenyellow;
+      text-align: center;
+      font-size: 40px;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+
+     
+      
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+
+
+
+
+        section {
+          margin: 0.25rem;
+          padding: 0.35rem;
+          border: 20px solid greenyellow;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+     
+
+        h3 {
+          font-size: .9rem;
+          text-align: center;
+        }
+
+
+        h4 {
+          font-size: 1em;
+          text-align: center;
+          font-style: italic;
+        }
+
+
+        h5 {
+          font-size: 1rem;
+          text-align: center;
+          font-weight: normal;
+        }
+
+
+
+
+
+      a:link {
+        color: white;
+      }
+
+      a:visited {
+        color: white;
+      }
+
+
+      h5 a:link {
+        color: black;
+        font-style: italic;
+      }
+
+      h5 a:visited {
+        color: black;
+        font-style: italic;
+      }
+
+
+
+
+
+      #company-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 20px;
+        background-color: darkblue;
+      }
+      
+      .gridlines4 {
+        border: 1px solid skyblue;
+        padding: 10px;
+        background-color: greenyellow;
+      }
+
+
+      .gridlines4 a:link {
+        color: black;
+      }
+
+     .gridlines4 a:visited {
+        color: black;
+      }
